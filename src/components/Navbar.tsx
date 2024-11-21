@@ -125,7 +125,9 @@ export default function Navbar() {
               Program
             </Link>
             <Link
-              to="/pricing"
+              to="https://hirello.websitetech.in/login"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-700 hover:text-blue-600 py-2 px-3 rounded-md transition-colors"
             >
               Pricing
