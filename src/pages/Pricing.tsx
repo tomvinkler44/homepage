@@ -1,4 +1,5 @@
-import { Check } from 'lucide-react';
+import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Pricing() {
   const plans = [
@@ -10,10 +11,10 @@ export default function Pricing() {
         "Cover letter creator",
         "Elevator Pitches",
         "Skill-Gap Analysis",
-        "Career GPS"
+        "Career GPS",
       ],
       buttonText: "Get Started",
-      buttonStyle: "secondary"
+      buttonStyle: "secondary",
     },
     {
       name: "Basic",
@@ -26,10 +27,10 @@ export default function Pricing() {
         "Everything in Free +",
         "Application Tracker",
         "Messaging Platform",
-        "Task Management"
+        "Task Management",
       ],
       buttonText: "Upgrade",
-      buttonStyle: "primary"
+      buttonStyle: "primary",
     },
     {
       name: "Pro",
@@ -42,15 +43,15 @@ export default function Pricing() {
         "Everything in Basic +",
         "Resume Optimizer",
         "LinkedIn Optimizer",
-        "Interview Practice (6 interviews/month)"
+        "Interview Practice (6 interviews/month)",
       ],
-      buttonText: "Your Current Plan",
+      buttonText: "Upgrade",
       buttonStyle: "success",
       alternateButton: {
         text: "Cancel",
-        style: "secondary"
-      }
-    }
+        style: "secondary",
+      },
+    },
   ];
 
   const coachingPlans = [
@@ -60,10 +61,10 @@ export default function Pricing() {
       period: "/month",
       features: [
         "Everything in Pro +",
-        "30 minutes of Career/Job Coaching by Expert Career Coach (human)"
+        "30 minutes of Career/Job Coaching by Expert Career Coach (human)",
       ],
       buttonText: "Upgrade",
-      buttonStyle: "primary"
+      buttonStyle: "primary",
     },
     {
       name: "Career Coaching Pro",
@@ -71,11 +72,11 @@ export default function Pricing() {
       period: "/month",
       features: [
         "Everything in Pro +",
-        "4 x 50 minutes of Comprehensive Career Coaching"
+        "4 x 50 minutes of Comprehensive Career Coaching",
       ],
       buttonText: "Upgrade",
-      buttonStyle: "primary"
-    }
+      buttonStyle: "primary",
+    },
   ];
 
   const standaloneProducts = [
@@ -84,15 +85,15 @@ export default function Pricing() {
       price: "22",
       period: "/month",
       buttonText: "Buy",
-      buttonStyle: "primary"
+      buttonStyle: "primary",
     },
     {
       name: "Resume Optimizer",
       price: "35",
       period: "/month",
       buttonText: "Buy",
-      buttonStyle: "primary"
-    }
+      buttonStyle: "primary",
+    },
   ];
 
   return (
@@ -100,16 +101,18 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">Pricing Plans</h1>
-          <p className="text-xl text-gray-600">Choose the plan that best fits your needs</p>
+          <p className="text-xl text-gray-600">
+            Choose the plan that best fits your needs
+          </p>
         </div>
 
         {/* Main Plans */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {plans.map((plan) => (
-            <div 
-              key={plan.name} 
+            <div
+              key={plan.name}
               className={`bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 ${
-                plan.popular ? 'ring-2 ring-blue-500' : ''
+                plan.popular ? "ring-2 ring-blue-500" : ""
               }`}
             >
               {plan.popular && (
@@ -129,7 +132,10 @@ export default function Pricing() {
                     <div className="mt-2 text-gray-600">
                       <span className="text-sm">$</span>
                       {plan.quarterlyPrice}
-                      <span className="text-sm"> per quarter ({plan.quarterlyDiscount} discount)</span>
+                      <span className="text-sm">
+                        {" "}
+                        per quarter ({plan.quarterlyDiscount} discount)
+                      </span>
                     </div>
                   )}
                 </div>
@@ -141,20 +147,25 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <button className={`w-full py-3 px-4 rounded-md font-semibold mb-2 ${
-                  plan.buttonStyle === 'primary'
-                    ? 'bg-blue-600 text-white hover:bg-blue-700'
-                    : plan.buttonStyle === 'success'
-                    ? 'bg-green-500 text-white hover:bg-green-600'
-                    : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                }`}>
+                {/* className={`text-center block w-full py-3 px-4 rounded-md font-semibold mb-2 ${
+                  plan.buttonStyle === "primary"
+                    ? "bg-blue-600 text-white hover:bg-blue-700"
+                    : plan.buttonStyle === "success"
+                    ? "bg-green-500 text-white hover:bg-green-600"
+                    : "bg-gray-100 text-gray-900 hover:bg-gray-200"
+                }`} */}
+                <Link
+                  to="https://hirello.websitetech.in/login"
+                  target="_blank"
+                  className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
+                >
                   {plan.buttonText}
-                </button>
-                {plan.alternateButton && (
+                </Link>
+                {/* {plan.alternateButton && (
                   <button className="w-full py-3 px-4 rounded-md font-semibold bg-gray-100 text-gray-900 hover:bg-gray-200">
                     {plan.alternateButton.text}
                   </button>
-                )}
+                )} */}
               </div>
             </div>
           ))}
@@ -166,7 +177,7 @@ export default function Pricing() {
         </div>
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {coachingPlans.map((plan) => (
-            <div 
+            <div
               key={plan.name}
               className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
             >
@@ -187,9 +198,14 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700">
+                <Link
+                  to="https://hirello.websitetech.in/login"
+                  target="_blank"
+                  type="button"
+                  className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
+                >
                   {plan.buttonText}
-                </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -201,7 +217,7 @@ export default function Pricing() {
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {standaloneProducts.map((product) => (
-            <div 
+            <div
               key={product.name}
               className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
             >
@@ -214,9 +230,13 @@ export default function Pricing() {
                     <span className="text-gray-600 ml-1">{product.period}</span>
                   </div>
                 </div>
-                <button className="w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700">
+                <Link
+                  to="https://hirello.websitetech.in/login"
+                  target="_blank"
+                  className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
+                >
                   {product.buttonText}
-                </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -225,8 +245,8 @@ export default function Pricing() {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold mb-4">Money-Back Guarantee</h3>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            If you're not completely satisfied with our program within the first 14 days,
-            we'll refund your investment - no questions asked.
+            If you're not completely satisfied with our program within the first
+            14 days, we'll refund your investment - no questions asked.
           </p>
         </div>
       </div>
