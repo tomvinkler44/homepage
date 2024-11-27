@@ -139,7 +139,7 @@ export default function Navbar() {
               Get Started for Free
             </a>
             <a
-              href="https://hirello.ai/blog/"
+              href="https://blog.hirello.ai/blogs/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-blue-600 py-2 px-3 rounded-md transition-colors"
