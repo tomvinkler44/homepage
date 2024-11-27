@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import VideoSection from "../components/VideoSection";
 import JourneyCarousel from "../components/JourneyCarousel";
 import FAQSection from "../components/FAQSection";
+import JobFindImage from "../assests/images/homepage.png"
 
 export default function Program() {
   const programFaqs = [
@@ -182,7 +183,7 @@ export default function Program() {
             <div className="relative">
               <img
                 style={{ height: "400px", width: "100%" }}
-                src="/src/assests/images/homepage.png"
+                src={JobFindImage}
                 alt="Job search success"
                 className="rounded-lg"
               />
