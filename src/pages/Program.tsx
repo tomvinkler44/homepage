@@ -180,12 +180,11 @@ export default function Program() {
                 </p>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative d-flex justify-start items-center">
               <img
-                style={{ height: "400px", width: "100%" }}
+                style={{ height: "400px", width: 'auto' }}
                 src={JobFindImage}
-                alt="Job search success"
-                className="rounded-lg"
+                alt="Job search success"                
               />
             </div>
           </div>
