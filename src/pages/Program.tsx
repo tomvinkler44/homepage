@@ -180,7 +180,7 @@ export default function Program() {
                 </p>
               </div>
             </div>
-            <div className="relative d-flex justify-start items-center">
+            <div className="relative flex justify-center items-center">
               <img
                 style={{ height: "400px", width: 'auto' }}
                 src={JobFindImage}
