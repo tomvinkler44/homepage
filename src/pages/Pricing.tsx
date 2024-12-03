@@ -155,7 +155,7 @@ export default function Pricing() {
                     : "bg-gray-100 text-gray-900 hover:bg-gray-200"
                 }`} */}
                 <Link
-                  to="https://hirello.websitetech.in/login"
+                  to="https://dashboard.hirello.ai/login"
                   target="_blank"
                   className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
                 >
@@ -199,7 +199,7 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <Link
-                  to="https://hirello.websitetech.in/login"
+                  to="https://dashboard.hirello.ai/login"
                   target="_blank"
                   type="button"
                   className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
@@ -231,7 +231,7 @@ export default function Pricing() {
                   </div>
                 </div>
                 <Link
-                  to="https://hirello.websitetech.in/login"
+                  to="https://dashboard.hirello.ai/login"
                   target="_blank"
                   className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
                 >
