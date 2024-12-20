@@ -6,7 +6,7 @@ export default function VideoSection() {
           className="mt-2 d-flex justify-center mx-auto"
           width="600"
           height="300"
-          src="https://www.youtube.com/embed/v3XlzU9ddnE"
+          src="https://www.youtube.com/embed/MbyCRAZ12ow"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
