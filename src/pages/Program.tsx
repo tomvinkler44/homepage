@@ -135,7 +135,7 @@ export default function Program() {
               days
             </p>
           </div>
-          <VideoSection />
+          <VideoSection link="https://www.youtube.com/embed/MbyCRAZ12ow" />
         </div>
       </section>
 

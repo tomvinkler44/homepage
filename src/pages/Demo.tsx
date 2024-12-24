@@ -10,7 +10,7 @@ export default function Demo() {
             See how our program helps you land your dream job in just 30 days
           </p>
         </div>
-        <VideoSection />
+        <VideoSection link="https://www.youtube.com/embed/MbyCRAZ12ow" />
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-600 mb-8">
             Ready to start your journey to career success?
