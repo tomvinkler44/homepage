@@ -60,7 +60,7 @@ export default function InterviewPractice() {
               and Career Coaches
             </p>
           </div>
-          <VideoSection link="https://www.youtube.com/embed/YM2koMQ73eo" />
+          <VideoSection link="https://www.youtube.com/embed/zkxu_lxNU-g" />
         </div>
       </section>
 

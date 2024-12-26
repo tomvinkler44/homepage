@@ -75,8 +75,8 @@ export default function Home() {
               Land Your Dream Job in 30 Days
             </h1>
             <p className="text-xl md:text-2xl mb-12 text-blue-100">
-              A Step-By-Step System To Accelerate Your Job Search And Get You
-              Hired Faster
+              The Only Proven Step-by-Step System Developed by Top Recruiters
+              and Career Coaches
             </p>
             <div className="relative inline-block">
               <div className="flex justify-center space-x-4">
