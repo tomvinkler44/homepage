@@ -2,7 +2,8 @@ import { ArrowRight } from "lucide-react";
 import VideoSection from "../components/VideoSection";
 import JourneyCarousel from "../components/JourneyCarousel";
 import FAQSection from "../components/FAQSection";
-import JobFindImage from "../assests/images/homepage.png"
+import JobFindImage from "../assests/images/homepage.png";
+import { Link } from "react-router-dom";
 
 export default function Program() {
   const programFaqs = [
@@ -115,10 +116,13 @@ export default function Program() {
               Unlock your full potential with a proven step-by-step roadmap to
               your dream job
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center">
+            <Link
+              to="/pricing"
+              className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center"
+            >
               Let's Do This
               <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -182,9 +186,9 @@ export default function Program() {
             </div>
             <div className="relative flex justify-center items-center">
               <img
-                style={{ height: "400px", width: 'auto' }}
+                style={{ height: "400px", width: "auto" }}
                 src={JobFindImage}
-                alt="Job search success"                
+                alt="Job search success"
               />
             </div>
           </div>
@@ -211,9 +215,12 @@ export default function Program() {
             Join our program today and take the first step towards landing your
             dream job.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors">
+          <Link
+            to="/pricing"
+            className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors"
+          >
             Get Started Now
-          </button>
+          </Link>
         </div>
       </section>
     </div>

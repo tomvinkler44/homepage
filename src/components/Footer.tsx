@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import { Briefcase, Linkedin, Facebook, Youtube, Video } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { Briefcase, Linkedin, Youtube, Video } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -18,44 +18,84 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/program" className="text-gray-400 hover:text-white transition-colors">Program</Link></li>
-              <li><Link to="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li>
+                <Link
+                  to="/program"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Program
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/pricing"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><a href="https://hirello.ai/blog/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><Link to="/program#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</Link></li>
+              <li>
+                <a
+                  href="https://hirello.ai/blog/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <Link
+                  to="/program#faq"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  FAQ
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a 
-                href="#youtube" 
+              <a
+                href="https://www.youtube.com/@TeamHirello"
+                target="_blank"
                 className="text-gray-400 hover:text-white transition-colors tap-target"
                 aria-label="YouTube"
               >
                 <Youtube className="h-6 w-6" />
               </a>
-              <a 
-                href="#linkedin" 
+              <a
+                href="https://www.linkedin.com/company/hirello-ai/"
+                target="_blank"
                 className="text-gray-400 hover:text-white transition-colors tap-target"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a 
+              {/* <a 
                 href="#facebook" 
                 className="text-gray-400 hover:text-white transition-colors tap-target"
                 aria-label="Facebook"
               >
                 <Facebook className="h-6 w-6" />
-              </a>
-              <a 
-                href="#tiktok" 
+                </a> */}
+              <a
+                href="https://www.tiktok.com/@hirello"
+                target="_blank"
                 className="text-gray-400 hover:text-white transition-colors tap-target"
                 aria-label="TikTok"
               >
@@ -65,7 +105,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Job in 30 Days. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Job in 30 Days. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>

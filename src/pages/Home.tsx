@@ -80,8 +80,8 @@ export default function Home() {
             </p>
             <div className="relative inline-block">
               <div className="flex justify-center space-x-4">
-                <a
-                  href="#get-started"
+                <Link
+                  to="/pricing"
                   className="animate-slide-up inline-flex items-center bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-blue-600 hover:text-white"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
@@ -90,7 +90,7 @@ export default function Home() {
                     ? "Taking You to Day 1..."
                     : "I'm Ready To Transform My Future"}
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+                </Link>
                 <Link
                   to="/demo"
                   className={`animate-slide-up animate-slide-up-delay-1 inline-flex items-center bg-blue-700 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-800 transition-all duration-300 border-2 border-white relative z-20 ${
@@ -254,13 +254,13 @@ export default function Home() {
             Join our program today and take the first step towards landing your
             dream job in just 30 days.
           </p>
-          <a
-            href="#get-started"
+          <Link
+            to="/pricing"
             className="inline-flex items-center bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors"
           >
             Get Hired Faster - Start Now
             <ArrowRight className="ml-2 h-5 w-5" />
-          </a>
+          </Link>
         </div>
       </section>
     </div>

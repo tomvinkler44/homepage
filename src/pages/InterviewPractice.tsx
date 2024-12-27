@@ -1,5 +1,6 @@
 import { Bot, Brain, Clock, Target, Shield } from "lucide-react";
 import VideoSection from "../components/VideoSection";
+import { Link } from "react-router-dom";
 
 export default function InterviewPractice() {
   const benefits = [
@@ -99,9 +100,12 @@ export default function InterviewPractice() {
             Start practicing with our AI interview coach today and build the
             confidence you need to succeed.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors">
-            Try it Free
-          </button>
+          <Link
+            to="/pricing"
+            className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors"
+          >
+            Let's do this
+          </Link>
         </div>
       </section>
     </div>
