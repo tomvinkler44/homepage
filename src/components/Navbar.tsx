@@ -132,8 +132,8 @@ export default function Navbar() {
             >
               Pricing
             </Link>
-             <Link
-                  to="/pricing"
+            <Link
+              to="/pricing"
               className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors shadow-sm"
             >
               Get Started for Free
@@ -188,7 +188,7 @@ export default function Navbar() {
             Get Started for Free
           </a>
           <a
-            href="https://hirello.ai/blog/"
+            href="https://blog.hirello.ai/"
             target="_blank"
             rel="noopener noreferrer"
             className="block px-3 py-4 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 active:bg-gray-100 transition-colors"
