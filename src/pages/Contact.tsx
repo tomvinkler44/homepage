@@ -21,10 +21,10 @@ export default function Contact() {
                   For questions about membership, partnerships, or any other inquiries, please email us at:
                 </p>
                 <a 
-                  href="mailto:firstcontact@hirello.com"
+                  href="mailto:firstcontact@hirello.ai"
                   className="text-blue-600 hover:text-blue-700 font-semibold text-lg"
                 >
-                  firstcontact@hirello.com
+                  firstcontact@hirello.ai
                 </a>
               </div>
             </div>
