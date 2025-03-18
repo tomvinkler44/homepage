@@ -133,6 +133,14 @@ export default function Navbar() {
               Pricing
             </Link>
             <Link
+              to="https://dashboard.hirello.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 bg-gray-200 hover:text-black py-2 px-3 rounded-md transition-colors"
+            >
+             Dashboard
+            </Link>
+            <Link
               to="/pricing"
               className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors shadow-sm"
             >
