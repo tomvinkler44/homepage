@@ -66,9 +66,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img 
-              src="src/assests/images/hirellowoman.png" 
+              src="/assests/images/hirellowoman.png" 
               alt="Job search success"
-              className="rounded-2xl shadow-2xl"
+              className='drop-shadow-purple'
             />
           </motion.div>
         </div>

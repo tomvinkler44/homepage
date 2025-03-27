@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import VideoSection from "../components/VideoSection";
 import JourneyCarousel from "../components/JourneyCarousel";
 import FAQSection from "../components/FAQSection";
-import JobFindImage from "../assests/images/homepage.png";
+import JobFindImage from "/assests/images/homepage.png";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 

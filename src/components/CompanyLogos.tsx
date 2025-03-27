@@ -39,7 +39,7 @@ export default function CompanyLogos() {
                 className="flex-none flex-col py-8 px-12 bg-gray-50 rounded-xl flex items-center justify-center min-w-[200px]"
                 style={{ color: "var(--secondary-color)" }}
               >
-                <img className="h-12 w-12 mb-2" src={`src/assests/company-logo/${company.logo}`} alt="" />
+                <img className="h-12 w-12 mb-2" src={`/assests/company-logo/${company.logo}`} alt="" />
                 <span className="text-xl font-bold">{company.name}</span>
               </div>
             ))}

@@ -42,6 +42,9 @@ export default {
       spacing: {
         'safe': 'env(safe-area-inset-bottom)',
       },
+      dropShadow: {
+        purple: "0 0 12.75rem rgb(8, 8, 8)", // Purple shadow
+      },
     },
   },
   plugins: [
