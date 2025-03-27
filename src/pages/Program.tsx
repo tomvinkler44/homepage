@@ -3,7 +3,8 @@ import VideoSection from "../components/VideoSection";
 import JourneyCarousel from "../components/JourneyCarousel";
 import FAQSection from "../components/FAQSection";
 import JobFindImage from "../assests/images/homepage.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Program() {
   const programFaqs = [
@@ -103,6 +104,19 @@ export default function Program() {
     },
   ];
 
+  const location = useLocation();
+
+  // Use effect to handle scrolling to the target section when URL hash changes
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -196,7 +210,7 @@ export default function Program() {
       </section>
 
       {/* Comprehensive FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50" id="faq">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
             Comprehensive FAQ

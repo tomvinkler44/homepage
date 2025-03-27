@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --secondary-color: #2C3E50;
+  --accent-color: #00B8D9;
+  --text-color: #333333;
+}
+
 @layer base {
   html {
-    font-family: 'Inter', system-ui, sans-serif;
-    -webkit-tap-highlight-color: transparent;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
   }
 
   body {
@@ -16,7 +22,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
   }
 }
 
@@ -118,4 +125,94 @@
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
   padding-bottom: env(safe-area-inset-bottom);
+}
+
+.gradient-bg-hero {
+  background: linear-gradient(135deg, #2D1B4E 0%, #0F0A1A 100%);
+}
+
+.gradient-bg-blue {
+  background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+}
+
+.gradient-bg-white {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+}
+
+.button-hover {
+  transition: all 0.2s ease;
+}
+
+.button-hover:hover {
+  transform: translateY(-2px);
+}
+
+.button-hover:active {
+  transform: translateY(0);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.guarantee-button-shadow {
+  box-shadow: 0 4px 14px rgba(0, 255, 0, 0.2);
+}
+
+.action-button-glow {
+  box-shadow: 0 4px 20px rgba(255, 97, 0, 0.3);
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.video-button {
+  background: var(--accent-color);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 0 8px 32px rgba(0, 184, 217, 0.25);
+}
+
+.video-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 184, 217, 0.35);
+}
+
+.logo-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.font-heading {
+  font-family: Poppins, sans-serif;
 }

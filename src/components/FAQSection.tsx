@@ -85,9 +85,7 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0 w-6 h-6">
                   <HelpCircle 
-                    className={`w-6 h-6 text-blue-500 transition-transform duration-300 ${
-                      openIndex === index ? 'rotate-180' : ''
-                    }`} 
+                    className={`w-6 h-6 text-blue-500 transition-transform duration-300`} 
                   />
                 </div>
                 <span className={`text-lg font-semibold ${
