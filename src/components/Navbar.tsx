@@ -7,19 +7,32 @@ export default function Navbar() {
     <nav className="fixed-header border-b border-gray-100 shadow-soft">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <Link to="/" className="flex items-center">
-            <motion.div
+          <div className="flex items-center">
+            <Link to="/">
+              <motion.div
+                className="flex items-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <BriefcaseIcon className="h-8 w-8 text-blue-600" />
+                <span className="ml-2 text-xl font-bold text-gray-900 font-heading">
+                  Job in 30 Days - by
+                </span>
+              </motion.div>
+            </Link>
+            <Link
+              to="https://dashboard.hirello.ai"
+              target="_blank"
               className="flex items-center"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
             >
-              <BriefcaseIcon className="h-8 w-8 text-blue-600" />
-              <span className="ml-2 text-xl font-bold text-gray-900 font-heading">
-                Job in 30 Days
-              </span>
-            </motion.div>
-          </Link>
+              <img
+                src="/assests/images/hirello-logo.png"
+                alt="logo"
+                className="h-[30px] ms-1"
+              />
+            </Link>
+          </div>
           <div className="hidden md:flex items-center space-x-8">
             <motion.a
               href="/interview-practice"

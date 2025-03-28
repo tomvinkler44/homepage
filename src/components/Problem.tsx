@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AlertTriangle,
   Users,
@@ -38,22 +37,23 @@ const problems = [
 
 export default function Problem() {
   const opts = {
-    // width: "100%",
+    width: "100%",
     playerVars: {
       autoplay: 0,
       mute: 1,
-      // controls: 1,
       playlist: "fO8mxSXxbhU",
       loop: 1,
       rel: 0,
       modestbranding: 1,
     },
   };
+
   return (
     <div className="bg-gray-50 py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          {/* Left Section: Problems List */}
+          <div className="space-y-8">
             <div className="flex items-center gap-3 mb-6">
               <AlertTriangle className="w-8 h-8 text-red-500" />
               <h2 className="text-4xl font-bold text-red-500">
@@ -65,32 +65,32 @@ export default function Problem() {
               interviews, and pick your offers. But that's not today's reality.
             </p>
 
-            <div className="space-y-8">
-              {problems.map((problem, index) => (
-                <motion.div
-                  key={index}
-                  className="flex gap-6 bg-white p-6 rounded-xl shadow-soft hover:shadow-hover transition-all duration-300"
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <div className="flex-shrink-0 w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
-                    <problem.icon className="w-6 h-6 text-red-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">
-                      {problem.title}
-                    </h3>
-                    <p className="text-gray-600">{problem.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+            {problems.map((problem, index) => (
+              <motion.div
+                key={index}
+                className="flex gap-6 bg-white p-6 rounded-xl shadow-soft hover:shadow-hover transition-all duration-300"
+                whileHover={{ scale: 1.02 }}
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+                  <problem.icon className="w-6 h-6 text-red-500" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">{problem.title}</h3>
+                  <p className="text-gray-600">{problem.description}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
 
-          <div className="flex justify-center">
-            <YtPlayer videoId={"fO8mxSXxbhU"} opts={opts} />
+          {/* Right Section: Sticky Video */}
+          <div className="relative h-full">
+            <div className="sticky top-24">
+              <YtPlayer videoId={"fO8mxSXxbhU"} opts={opts} />
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
+

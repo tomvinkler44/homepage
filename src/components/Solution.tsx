@@ -25,11 +25,11 @@ export default function Solution() {
     <div className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
+          <div className='flex justify-center'>
             <img 
-              src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=600&q=80" 
+              src="/assests/images/hiring-process.png" 
               alt="Job search success"
-              className="rounded-lg shadow-xl"
+              className='h-[500px] md:h-[576px]'
             />
           </div>
           
