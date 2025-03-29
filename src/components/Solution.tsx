@@ -29,7 +29,7 @@ export default function Solution() {
             <img 
               src="/assests/images/hiring-process.png" 
               alt="Job search success"
-              className='h-[500px] md:h-[576px]'
+              className='h-[500px] md:h-[800px]'
             />
           </div>
           

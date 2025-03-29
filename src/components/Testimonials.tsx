@@ -5,25 +5,25 @@ const testimonials = [
   {
     name: "Sarah Chen",
     role: "Software Engineer",
-    company: "Fortune 500 Tech Company",
+    company: "Google",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
-    quote: "After 6 months of sending applications into the void, I followed this system and landed my dream job in just 3 weeks. The difference was night and day.",
+    quote: "After submitting over 300 applications resulting in one interview (which lled nowhere), I was ready to give up. This system helped me completely revamp my approach. Within 4 weeks, I had 5 interviews lined up, and two of them actually led to offers. Google was the obvious choice 🙂  The interview practices really helped, I think my resume also became a lot better after a few rounds with Hirello’s AI.",
     achievement: "Increased salary by $45K"
   },
   {
     name: "Marcus Rodriguez",
-    role: "Marketing Director",
-    company: "Leading Digital Agency",
+    role: "Technical Project Manager",
+    company: "Pinterest",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150&q=80",
-    quote: "The strategies for bypassing traditional applications and connecting directly with decision-makers are pure gold. This completely changed my job search game.",
+    quote: "I was stuck in an endless cycle of applying through job boards and hearing nothing back. Following this program I was able to figure out how to build connections and eventually one of these turned into a referral, which turned into an interview, then an offer. The outreach templates and hidden job market strategies led to conversations that never would have happened otherwise. I think without Hirello’s system I would still be submitting applications after application.",
     achievement: "Landed role in 4 weeks"
   },
   {
     name: "Emily Thompson",
     role: "Product Manager",
-    company: "High-Growth Startup",
+    company: "undisclosed",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80",
-    quote: "The daily action plans and AI interview practice made all the difference. I went from getting no responses to having multiple offers to choose from.",
+    quote: "After 8 months of frustrating job searching and one failed interview after another, I didn’t know how to keep the hope alive. But the 30 day program made a lot of sense, I tried to follow it best I could. And the structured interview prep made a big difference. I went from constant rejections to passing 3 second round interviews and finally one job offer.",
     achievement: "4 competing offers"
   }
 ];

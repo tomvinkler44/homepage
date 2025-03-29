@@ -61,12 +61,12 @@ const YtPlayer: React.FC<YtPlayerProps> = ({ videoId, opts }) => {
   }, [ready]);
 
   return (
-    <div ref={containerRef} className="ytplayer">
+    <div ref={containerRef} className="ytplayer flex justify-center rounded">
       <YouTube
         videoId={videoId}
         opts={{
           height: playerHeight,
-          width: '100%',
+          width: 'auto',
           ...(opts ?? { playerVars: { loop: 1 } }),
         }}
         onReady={onReady}

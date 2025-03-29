@@ -37,7 +37,6 @@ const problems = [
 
 export default function Problem() {
   const opts = {
-    width: "100%",
     playerVars: {
       autoplay: 0,
       mute: 1,
@@ -75,7 +74,9 @@ export default function Problem() {
                   <problem.icon className="w-6 h-6 text-red-500" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">{problem.title}</h3>
+                  <h3 className="font-semibold text-lg mb-2">
+                    {problem.title}
+                  </h3>
                   <p className="text-gray-600">{problem.description}</p>
                 </div>
               </motion.div>
@@ -83,8 +84,16 @@ export default function Problem() {
           </div>
 
           {/* Right Section: Sticky Video */}
-          <div className="relative h-full">
+          <div
+            className="relative h-full rounded-2xl py-5 px-28"
+            style={{
+              background: "linear-gradient(135deg, #4e5a74 0%, #60a5fa 100%)",
+            }}
+          >
             <div className="sticky top-24">
+              <h3 className="text-3xl font-medium mb-4 text-white">
+                What Really Happens To Your Resume... 😊
+              </h3>
               <YtPlayer videoId={"fO8mxSXxbhU"} opts={opts} />
             </div>
           </div>
@@ -93,4 +102,3 @@ export default function Problem() {
     </div>
   );
 }
-
