@@ -19,7 +19,6 @@ const YtPlayer: React.FC<YtPlayerProps> = ({ videoId, opts }) => {
   const playerRef = useRef<YT.Player | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [ready, setReady] = useState<boolean>(false);
-  const [playerHeight, setPlayerHeight] = useState<string>("700");
 
   const onReady = (event: { target: YT.Player }) => {
     playerRef.current = event.target;
@@ -27,17 +26,6 @@ const YtPlayer: React.FC<YtPlayerProps> = ({ videoId, opts }) => {
     // Optional: play the video when the player is ready
     // playerRef.current.playVideo();
   };
-
-  useEffect(() => {
-    const updateHeight = () => {
-      setPlayerHeight(window.innerWidth <= 768 ? "300" : "500");
-    };
-
-    updateHeight(); // Set height on mount
-    window.addEventListener("resize", updateHeight); // Listen for resize
-
-    return () => window.removeEventListener("resize", updateHeight); // Cleanup
-  }, []);
 
   useEffect(() => {
     if (!containerRef.current || !playerRef.current) return;
@@ -65,7 +53,7 @@ const YtPlayer: React.FC<YtPlayerProps> = ({ videoId, opts }) => {
       <YouTube
         videoId={videoId}
         opts={{
-          height: playerHeight,
+          height: '500',
           width: 'auto',
           ...(opts ?? { playerVars: { loop: 1 } }),
         }}

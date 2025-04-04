@@ -48,9 +48,9 @@ export default function Problem() {
   };
 
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-gray-50 py-10 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="block sm:grid md:grid-cols-2 gap-16 items-start">
           {/* Left Section: Problems List */}
           <div className="space-y-8">
             <div className="flex items-center gap-3 mb-6">
@@ -85,7 +85,7 @@ export default function Problem() {
 
           {/* Right Section: Sticky Video */}
           <div
-            className="relative h-full rounded-2xl py-5 px-28"
+            className="relative h-full rounded-2xl py-5 px-5 md:px-15 lg:px-28 mt-5 sm:mt-0"
             style={{
               background: "linear-gradient(135deg, #4e5a74 0%, #60a5fa 100%)",
             }}

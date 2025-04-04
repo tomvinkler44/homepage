@@ -33,7 +33,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="bg-white py-24">
+    <div className="bg-white py-10 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold mb-4">Real People, Real Results</h2>
@@ -45,12 +45,12 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 rounded-xl p-8 relative">
+            <div key={index} className="bg-gray-50 rounded-xl p-4 md:p-8 relative">
               <div className="absolute top-0 right-0 transform translate-x-4 -translate-y-4">
                 <Quote className="w-12 h-12 text-blue-100" />
               </div>
 
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-3 md:mb-6">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
@@ -63,7 +63,7 @@ export default function Testimonials() {
                 </div>
               </div>
 
-              <blockquote className="text-gray-700 mb-6">
+              <blockquote className="text-gray-700 mb-3 md:mb-6">
                 "{testimonial.quote}"
               </blockquote>
 

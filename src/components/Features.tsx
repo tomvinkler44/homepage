@@ -51,10 +51,10 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="gradient-bg-white py-24">
+    <div className="gradient-bg-white py-10 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
-          <div className="bg-[#3B4F66] rounded-2xl p-12 mb-24 text-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-[#3B4F66] rounded-2xl p-6 md:p-12 mb-24 text-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <h2 className="text-4xl font-bold mb-6 font-heading text-[#00B8D9]">
               Designed By Top Recruiters and Career Coaches
             </h2>
@@ -90,12 +90,12 @@ export default function Features() {
               <AnimatedSection key={index}>
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="bg-white rounded-xl p-8 shadow-soft hover:shadow-hover card-hover"
+                  className="bg-white rounded-xl p-4 md:p-8 shadow-soft hover:shadow-hover card-hover"
                 >
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-3 md:mb-6">
                     <Icon className="w-6 h-6 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 font-heading">
+                  <h3 className="text-xl font-bold mb-4 md:mb-4 font-heading">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600">{feature.description}</p>

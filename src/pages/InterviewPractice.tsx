@@ -39,9 +39,9 @@ export default function InterviewPractice() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white pt-28 pb-10 md:pt-32 md:pb-15">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
             Master Your Interview Skills with AI
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
@@ -52,7 +52,7 @@ export default function InterviewPractice() {
       </section>
 
       {/* Video Demo Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-6">See How It Works</h2>
@@ -66,16 +66,16 @@ export default function InterviewPractice() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
             Why Practice with AI?
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex items-start p-6 bg-gray-50 rounded-xl"
+                className="flex items-start p-3 md:p-6 bg-gray-50 rounded-xl"
               >
                 <benefit.icon className="h-8 w-8 text-blue-600 mr-4 flex-shrink-0" />
                 <div>
@@ -91,9 +91,9 @@ export default function InterviewPractice() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-10 md:py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-white text-3xl font-bold mb-6">
             Ready to Ace Your Interviews?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">

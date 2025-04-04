@@ -120,10 +120,10 @@ export default function Program() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white pt-28 pb-10 md:pt-32 md:pb-15">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
               Your 30-Day Journey to Success
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
@@ -142,7 +142,7 @@ export default function Program() {
       </section>
 
       {/* Video Demo Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-6">
@@ -158,9 +158,9 @@ export default function Program() {
       </section>
 
       {/* Journey Timeline */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-6 md:mb-12">
             Your 30-Day Journey
           </h2>
           <JourneyCarousel />
@@ -168,7 +168,7 @@ export default function Program() {
       </section>
 
       {/* Program Details */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
@@ -210,9 +210,9 @@ export default function Program() {
       </section>
 
       {/* Comprehensive FAQ Section */}
-      <section className="py-20 bg-gray-50" id="faq">
+      <section className="py-10 md:py-20 bg-gray-50" id="faq">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-6 md:mb-12">
             Comprehensive FAQ
           </h2>
           <FAQSection faqs={programFaqs} />
@@ -220,9 +220,9 @@ export default function Program() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-10 md:py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-white text-3xl font-bold mb-6">
             Ready to Transform Your Career?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">

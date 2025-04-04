@@ -81,7 +81,7 @@ export default function JourneyCarousel() {
       >
         {journeySteps.map((step, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white p-6 rounded-xl shadow-md h-full">
+            <div className="bg-white py-6 px-8 rounded-xl shadow-md h-full">
               <h3 className="text-xl font-bold text-blue-600 mb-3">{step.title}</h3>
               <p className="text-lg font-semibold mb-4">{step.description}</p>
               <ul className="space-y-2">
@@ -96,10 +96,10 @@ export default function JourneyCarousel() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md">
+      <button className="swiper-button-prev absolute left-0 lg:-left-8 top-1/2 -translate-y-1/2 z-10 rounded-full">
         <ChevronLeft className="h-6 w-6 text-blue-600" />
       </button>
-      <button className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md">
+      <button className="swiper-button-next absolute right-0 lg:-right-8 top-1/2 -translate-y-1/2 z-10 rounded-full">
         <ChevronRight className="h-6 w-6 text-blue-600" />
       </button>
     </div>
