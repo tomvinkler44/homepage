@@ -1,63 +1,51 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import YouTube, { YouTubeProps } from "react-youtube";
-
-export const PlayerState = {
-  ENDED: 0,
-  PLAYING: 1,
-  PAUSED: 2,
-  BUFFERING: 3,
-  CUED: 5,
-};
+import ReactPlayer from "react-player/youtube";
 
 interface YtPlayerProps {
   videoId: string;
-  opts?: YouTubeProps["opts"];
+  opts?: {
+    height?: string;
+    width?: string;
+    loop?: boolean;
+    muted?: boolean;
+    [key: string]: unknown;
+  };
 }
 
 const YtPlayer: React.FC<YtPlayerProps> = ({ videoId, opts }) => {
-  const playerRef = useRef<YT.Player | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const [ready, setReady] = useState<boolean>(false);
-
-  const onReady = (event: { target: YT.Player }) => {
-    playerRef.current = event.target;
-    setReady(true);
-    // Optional: play the video when the player is ready
-    // playerRef.current.playVideo();
-  };
+  const playerRef = useRef<ReactPlayer | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    if (!containerRef.current || !playerRef.current) return;
+    if (!containerRef.current) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (playerRef.current) {
-          if (entry.isIntersecting && ready) {
-            playerRef.current.playVideo();
-          } else if (ready) {
-            playerRef.current.pauseVideo();
-          }
-        }
+        setIsPlaying(entry.isIntersecting);
       },
-      { threshold: 0.5 } // Video plays when 50% is visible
+      { threshold: 0.5 }
     );
 
     observer.observe(containerRef.current);
 
-    return () => observer.disconnect(); // Cleanup observer
-  }, [ready]);
+    return () => observer.disconnect();
+  }, []);
+
+  const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
 
   return (
     <div ref={containerRef} className="ytplayer flex justify-center rounded">
-      <YouTube
-        videoId={videoId}
-        opts={{
-          height: '500',
-          width: 'auto',
-          ...(opts ?? { playerVars: { loop: 1 } }),
-        }}
-        onReady={onReady}
+      <ReactPlayer
+        ref={playerRef}
+        url={videoUrl}
+        playing={isPlaying} // Autoplay when visible
+        muted={opts?.muted ?? true} // Muted by default
+        controls
+        loop={opts?.loop ?? true}
+        width={opts?.width ?? "100%"}
+        height={opts?.height ?? "500px"}
       />
     </div>
   );

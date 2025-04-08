@@ -38,7 +38,7 @@ const problems = [
 export default function Problem() {
   const opts = {
     playerVars: {
-      autoplay: 0,
+      autoplay: 1,
       mute: 1,
       playlist: "fO8mxSXxbhU",
       loop: 1,
