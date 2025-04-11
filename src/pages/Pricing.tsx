@@ -20,7 +20,7 @@ export default function Pricing() {
       name: "Basic",
       price: "27",
       period: "/month",
-      quarterlyPrice: "65",
+      quarterlyPrice: "19.95",
       quarterlyDiscount: "20%",
       features: [
         "30-Day Program",
@@ -36,7 +36,7 @@ export default function Pricing() {
       name: "Pro",
       price: "57",
       period: "/month",
-      quarterlyPrice: "119",
+      quarterlyPrice: "29.95",
       quarterlyDiscount: "30%",
       popular: true,
       features: [
@@ -132,10 +132,7 @@ export default function Pricing() {
                     <div className="mt-2 text-gray-600">
                       <span className="text-sm">$</span>
                       {plan.quarterlyPrice}
-                      <span className="text-sm">
-                        {" "}
-                        per quarter ({plan.quarterlyDiscount} discount)
-                      </span>
+                      /month for 3 months
                     </div>
                   )}
                 </div>

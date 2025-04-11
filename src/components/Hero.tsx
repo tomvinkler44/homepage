@@ -4,7 +4,7 @@ import { PlayCircle } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="relative gradient-bg-hero pt-16">
+    <div className="relative bg-[#1E3A8A] pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="block sm:grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -12,9 +12,6 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block bg-blue-600 bg-opacity-10 text-blue-100 px-4 py-1 rounded-full text-sm font-semibold mb-6">
-              STOP WASTING TIME ON JOB BOARDS
-            </span>
             <motion.a
               href="/money-back"
               className="bg-green-600 text-white px-6 py-3 rounded-lg inline-block mb-6 guarantee-button-shadow cursor-pointer"
@@ -42,14 +39,6 @@ export default function Hero() {
               your bank account. Sure, could work, but...
             </p>
             <div className="block m-auto sm:flex items-center gap-8">
-              <motion.a
-                href="/pricing"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="block text-center mb-5 sm:mb-0 bg-orange-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-600 transition action-button-glow"
-              >
-                Ready To Level Up My Job Search →
-              </motion.a>
               <motion.a
                 href="/demo"
                 whileHover={{ scale: 1.05 }}
