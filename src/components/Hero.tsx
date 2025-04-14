@@ -5,12 +5,13 @@ import { PlayCircle } from "lucide-react";
 export default function Hero() {
   return (
     <div className="relative bg-[#1E3A8A] pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="block sm:grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl sm:ml-auto  sm:pl-6 lg:pl-8 py-24">
+        <div className="block sm:grid md:grid-cols-2 gap-12 items-center ">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
+            className="px-4 sm:px-0"
           >
             <motion.a
               href="/money-back"
