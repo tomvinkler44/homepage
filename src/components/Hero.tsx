@@ -5,7 +5,7 @@ import { PlayCircle } from "lucide-react";
 export default function Hero() {
   return (
     <div className="relative bg-[#1E3A8A] pt-16">
-      <div className="max-w-7xl sm:ml-auto  sm:pl-6 lg:pl-8 py-24">
+      <div className="max-w-7xl m-auto pl-0 md:pl-6 lg:pl-8 py-12">
         <div className="block sm:grid md:grid-cols-2 gap-12 items-center ">
           <motion.div
             initial={{ opacity: 0, x: -20 }}

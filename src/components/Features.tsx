@@ -51,7 +51,7 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="gradient-bg-white py-10 md:py-24">
+    <div className="gradient-bg-white py-10 md:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="bg-[#3B4F66] rounded-2xl p-6 md:p-12 mb-24 text-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
