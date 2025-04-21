@@ -40,7 +40,7 @@ export default function CompanyLogos() {
                 style={{ color: "var(--secondary-color)" }}
               >
                 <img className="h-12 w-12 mb-2" src={`/assests/company-logo/${company.logo}`} alt="" />
-                <span className="text-xl font-bold">{company.name}</span>
+                <span className="text-xl font-bold capitalize">{company.name}</span>
               </div>
             ))}
           </div>

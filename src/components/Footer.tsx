@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="flex items-center mb-4">
               <BriefcaseIcon className="h-8 w-8 text-blue-400" />
               <span className="ml-2 text-xl font-bold text-white">
-                Job in 30 Days
+                Job in 60 Days
               </span>
             </div>
             <p className="text-gray-400">
@@ -76,6 +76,14 @@ export default function Footer() {
                   FAQ
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/money-back"
+                  className="hover:text-white transition-colors"
+                >
+                  Money Back Guarantee
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -106,7 +114,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>© 2025 Job in 30 Days. All rights reserved.</p>
+          <p>© 2025 Job in 60 Days. All rights reserved.</p>
         </div>
       </div>
     </footer>

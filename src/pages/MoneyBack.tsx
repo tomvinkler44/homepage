@@ -67,7 +67,7 @@ export default function MoneyBack() {
               </p>
               <h3 className="text-xl font-semibold">Ready to Take the Leap?</h3>
               <p className="text-gray-600">
-                Enroll in the "Job in 30 Days" Pro Plan today and embark on a
+                Enroll in the "Job in 60 Days" Pro Plan today and embark on a
                 transformative job search journey. With our comprehensive
                 program, AI-powered tools, and 60-Day Job Guarantee, you have
                 nothing to lose and everything to gain.
@@ -77,12 +77,6 @@ export default function MoneyBack() {
               </h3>
               <h3 className="text-xl font-semibold">Note:</h3>
               <ul className="list-none space-y-2">
-                <li className="relative pl-10">
-                  <Dot className="absolute left-0 top-1/2 transform -translate-y-1/2 w-8 h-8 text-blue-500" />{" "}
-                  <span className="text-gray-600 text-sm">
-                    This guarantee is only valid for the Pro Plan subscription.
-                  </span>
-                </li>
                 <li className="relative pl-10">
                   <Dot className="absolute left-0 top-1/2 transform -translate-y-1/2 w-8 h-8 text-blue-500" />
                   <span className="text-gray-600 text-sm">

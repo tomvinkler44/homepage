@@ -146,8 +146,8 @@
   background: linear-gradient(135deg, #2d1b4e 0%, #0f0a1a 100%);
 }
 
-.gradient-bg-blue {
-  background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+.gradient-bg-orange {
+  background: linear-gradient(135deg, rgb(249 115 22) 0%, rgb(227 168 126) 100%);
 }
 
 .gradient-bg-white {
