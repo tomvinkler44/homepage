@@ -7,15 +7,17 @@ import Problem from "../components/Problem";
 import Results from "../components/Results";
 import Solution from "../components/Solution";
 import Testimonials from "../components/Testimonials";
+import TopRecruitersAndCareerCoaches from "../components/TopRecruitersAndCareerCoaches";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Results />
+      <Features />
       <CompanyLogos />
       <Testimonials />
-      <Features />
+      <TopRecruitersAndCareerCoaches />
       <Problem />
       <Solution />
       <section className="py-10 md:py-24 pb-20">

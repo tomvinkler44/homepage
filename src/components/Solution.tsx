@@ -26,9 +26,9 @@ export default function Solution() {
             <path
               d="M12 8V16M8 12H16"
               stroke="#f97316"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <h3 className="strategy-title">Career Clarity</h3>
@@ -49,16 +49,16 @@ export default function Solution() {
             <path
               d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               stroke="#8b5cf6"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M9 10a2 2 0 01-2 2 2 2 0 100 4c.73 0 1.41-.3 1.87-.8m6.63-2.63a2 2 0 01-2.83 2.83m-1.17-6.17a2 2 0 112.83 2.83"
               stroke="#8b5cf6"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <h3 className="strategy-title">Uncover Hidden Jobs</h3>
@@ -78,9 +78,9 @@ export default function Solution() {
             <path
               d="M16 10l4 4m0 0l-4 4m4-4H4"
               stroke="#0ea5e9"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <h3 className="strategy-title">Bypass Gatekeepers</h3>
@@ -101,9 +101,9 @@ export default function Solution() {
             <path
               d="M13 10V3L4 14h7v7l9-11h-7z"
               stroke="#ec4899"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <h3 className="strategy-title">Strategic Connections</h3>
@@ -124,9 +124,9 @@ export default function Solution() {
             <path
               d="M12 22v-6m0 0H9.5M12 16h2.5M15.5 18h-7m13-7.8v-1c0-1.68 0-2.52-.327-3.162a3 3 0 00-1.311-1.311C19.24 4.4 18.4 4.4 16.72 4.4H7.28c-1.68 0-2.52 0-3.162.327a3 3 0 00-1.311 1.311C2.5 6.68 2.5 7.52 2.5 9.2v1c0 1.68 0 2.52.327 3.162a3 3 0 001.311 1.311c.642.327 1.482.327 3.162.327h9.44c1.68 0 2.52 0 3.162-.327a3 3 0 001.311-1.311c.327-.642.327-1.482.327-3.162z"
               stroke="#14b8a6"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <h3 className="strategy-title">Interview Mastery</h3>
@@ -147,16 +147,16 @@ export default function Solution() {
             <path
               d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
               stroke="#eab308"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M9 22V12h6v10"
               stroke="#eab308"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <h3 className="strategy-title">Negotiation Psychology</h3>
@@ -179,9 +179,9 @@ export default function Solution() {
           <path
             d="M5 12h14M12 5l7 7-7 7"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </a>

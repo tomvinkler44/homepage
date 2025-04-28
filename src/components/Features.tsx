@@ -1,4 +1,3 @@
-import React from "react";
 import {
   BriefcaseIcon,
   UserIcon,
@@ -25,7 +24,7 @@ const features = [
   },
   {
     icon: CalendarIcon,
-    title: "30-Day Action Plan",
+    title: "AI Interview Practice cards",
     description:
       "Follow our proven, step-by-step system with daily tasks and video lessons designed to get you hired.",
   },
@@ -54,31 +53,13 @@ export default function Features() {
     <div className="gradient-bg-white py-10 md:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
-          <div className="bg-[#3B4F66] rounded-2xl p-6 md:p-12 mb-24 text-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
-            <h2 className="text-4xl font-bold mb-6 font-heading text-[#00B8D9]">
-              Designed By Top Recruiters and Career Coaches
-            </h2>
-            <p className="text-xl mb-8 text-blue-100">
-              Our 30-day program isn't just another collection of generic
-              advice. It's a proven system built by professionals who've spent
-              decades in the trenches of hiring and career development.
-            </p>
-            <p className="text-xl text-blue-100">
-              The strategies in our program have been refined through thousands
-              of successful job placements and represent the collective wisdom
-              of what actually works in today's challenging job market.
-            </p>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl font-bold mb-4 font-heading">
               Take Control of Your Job Search
             </h2>
             <p className="text-xl text-gray-600">
-              Our comprehensive system gives you all the tools and support to
-              succeed
+              Our comprehensive 360 degree solution gives all the tools and
+              support you need to succeed
             </p>
           </div>
         </AnimatedSection>

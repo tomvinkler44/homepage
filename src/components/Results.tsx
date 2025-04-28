@@ -2,27 +2,32 @@ import React from "react";
 import { Calendar, Users, MessageSquare, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 
-const stats = [
+const stats: {
+  number: string;
+  description: string;
+  icon: React.ComponentType<{ className?: string }>;
+  color: keyof typeof colorClasses;
+}[] = [
   {
     number: "78%",
-    description: "of members land a job within 30 days",
+    description: "of members land a job within 60 days",
     icon: Calendar,
     color: "blue",
   },
   {
-    number: "5X",
+    number: "4X",
     description: "more interviews than traditional methods",
     icon: Users,
     color: "green",
   },
   {
-    number: "92%",
+    number: "74%",
     description: "interview success rate",
     icon: MessageSquare,
     color: "purple",
   },
   {
-    number: "$17K",
+    number: "$11K",
     description: "average salary increase",
     icon: TrendingUp,
     color: "orange",
