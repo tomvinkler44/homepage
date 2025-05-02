@@ -218,7 +218,7 @@ export default function Navbar() {
               className="block text-center px-4 py-2 bg-blue-50 rounded-lg text-blue-600 font-semibold hover:bg-blue-100 transition-colors shadow-soft"
               whileHover={{ scale: 1.05 }}
             >
-              DASHBOARD
+              My Portal
             </motion.a>
             <motion.a
               href="/pricing"
@@ -233,7 +233,7 @@ export default function Navbar() {
               className="block text-gray-600 hover:text-gray-900 transition-colors font-semibold"
               whileHover={{ scale: 1.05 }}
             >
-              Blog
+              Knowledge Base
             </motion.a>
           </div>
         )}
