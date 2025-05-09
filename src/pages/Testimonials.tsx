@@ -80,7 +80,7 @@ const testimonials = [
 const reviews = [
   {
     name: "Samir A.",
-    image: ClientImg5,
+    image: Boy20,
     quote: "HIRED!!!!!!!!!",
   },
   {
@@ -213,12 +213,6 @@ const reviews = [
     image: Boy19,
     quote: "Treating the job search like a project, as Hirello suggested, made a huge difference. Five weeks later I met my deadline—landed the exact job I wanted. Thanks, Hirello!"
   },
-  {
-    name: "Vanessa J.",
-    image: Boy20,
-    quote: "Treating the job search like a project, as Hirello suggested, made a huge difference. Five weeks later I met my deadline—landed the exact job I wanted. Thanks, Hirello!"
-  },
-
 ];
 
 export default function Testimonials() {
