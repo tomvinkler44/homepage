@@ -47,9 +47,9 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-8">
+           <div className="hidden lg:flex items-center space-x-8">
             {/* Institutional Solutions Dropdown */}
-            <div 
+            {/*  <div 
               className="relative"
               onMouseEnter={() => setIsInstitutionalOpen(true)}
               onMouseLeave={() => setIsInstitutionalOpen(false)}
@@ -91,6 +91,7 @@ export default function Navbar() {
                 )}
               </AnimatePresence>
             </div>
+            */}
 
             <motion.a
               href="/interview-practice"
@@ -135,7 +136,7 @@ export default function Navbar() {
             >
               Knowledge Base
             </motion.a>
-          </div>
+          </div> 
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
@@ -153,7 +154,7 @@ export default function Navbar() {
         {isMobileMenuOpen && (
           <div className="lg:hidden h-screen text-center z-50 mt-4 space-y-4 px-2 pb-4">
             {/* Mobile Institutional Solutions Dropdown */}
-            <div className="relative">
+            {/* <div className="relative">
               <button
                 onClick={() => setIsInstitutionalOpen(!isInstitutionalOpen)}
                 className="flex items-center justify-center w-full text-gray-600 hover:text-gray-900 transition-colors"
@@ -190,7 +191,7 @@ export default function Navbar() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </div> */}
 
             <motion.a
               href="/interview-practice"

@@ -8,7 +8,7 @@ import Demo from "./pages/Demo";
 import InterviewPractice from "./pages/InterviewPractice";
 import Contact from "./pages/Contact";
 import MoneyBack from "./pages/MoneyBack";
-
+import Testimonials from "./pages/Testimonials";
 export default function App() {
   return (
     <Router>
@@ -23,6 +23,7 @@ export default function App() {
             <Route path="/demo" element={<Demo />} />
             <Route path="/interview-practice" element={<InterviewPractice />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/testimonials" element={<Testimonials />} />
           </Routes>
         </main>
         <Footer />
