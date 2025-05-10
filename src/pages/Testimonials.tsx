@@ -79,34 +79,9 @@ const testimonials = [
 
 const reviews = [
   {
-    name: "Samir A.",
-    image: Boy20,
-    quote: "HIRED!!!!!!!!!",
-  },
-  {
     name: "Evan P.",
     image: Boy1,
     quote: "To be honest, I was a bit skeptical, but the price seemed reasonable—and boy am I glad I tried it! Hirello helped me structure my approach, which I didn’t realize I needed until I saw it in action. The sheer amount of helpful content for the price is amazing. It’s like having a professional career coach, a suite of tools, AI, training, and mock interviews—all broken into bite-sized daily tasks. Everything you need is there; just follow the plan! I’m thrilled to say I landed a great job on Day 43. Thank you, Hirello!"
-  },
-  {
-    name: "Nathalie J.",
-    image: Girl1,
-    quote: "Before Hirello, I was overwhelmed by endlessly sending applications with no clear strategy. The personalized coaching sessions helped me identify and strengthen weak areas, and I quickly learned how to tailor my résumé and discover alternate roles I was suited for. The AI tools were awesome and saved me a ton of time. I’d definitely recommend Hirello—and use it again."
-  },
-  {
-    name: "Madison M.",
-    image: Boy2,
-    quote: "Super happy with the value I got from Hirello! Their day-by-day action plan kept me organized and motivated, and the résumé optimizer improved my profile so much that I honestly felt more confident. Within a month I was landing far more—and higher-quality—interviews. Really appreciate it!"
-  },
-  {
-    name: "Owen R.",
-    image: Boy3,
-    quote: "I wasn’t sure this was right for me—I'm a seasoned professional—but at that price I figured, why not? I was shocked by how much I got. Easily worth hundreds of dollars."
-  },
-  {
-    name: "Dana L.",
-    image: Boy4,
-    quote: "I was hesitant to rely on an online career solution, but Hirello exceeded my expectations. The advanced AI coaching gave me practical tips that significantly boosted my interview performance. I loved the daily videos, job-search tips, and challenges. Best of all, I got hired!"
   },
   {
     name: "Brianna S.",
@@ -114,79 +89,9 @@ const reviews = [
     quote: "Hirello’s 30-day course completely changed my job-search approach. The personalized insights showed me which skills to highlight and how to communicate them. Their step-by-step plan kept me on track, and I saw measurable improvements in my application success rate within a week. Now I know that even if I’m laid off again, finding another job won’t be an issue. Cool experience overall."
   },
   {
-    name: "George T.",
-    image: Boy6,
-    quote: "With Hirello, I finally had a streamlined process that made sense. Their AI combined with daily checklists kept me accountable, and after months of crickets I finally started getting interviews."
-  },
-  {
-    name: "Hannah K.",
-    image: Boy7,
-    quote: "Hirello was life-changing during my career transition. The intuitive coaching and detailed résumé feedback helped me position myself as a strong candidate, and the interview simulations boosted my confidence. Every interaction felt designed for my success."
-  },
-  {
-    name: "Derek F.",
-    image: Boy8,
-    quote: "Hirello was essential in my career transition. The interactive coaching sessions and detailed résumé feedback were both practical and motivating. Every feature was designed to deliver real-world results in a competitive market. I’ve seen a big improvement in my interview performance and overall prospects."
-  },
-  {
-    name: "Ian D.",
-    image: Boy9,
-    quote: "Before signing up I compared several programs. This was not only the most affordable—it was the best of the bunch. It had everything I needed."
-  },
-  {
-    name: "Jasmine W.",
-    image: Girl2,
-    quote: "I struggled to get noticed in a competitive market, but Hirello changed that. The platform guided me through résumé enhancements, LinkedIn optimizations, and simulated interviews. Each step added up, and now I’m fielding offers from awesome companies. Thank you!"
-  },
-  {
-    name: "Marcus J.",
-    image: Boy10,
-    quote: "Hirello helped me focus on what matters. I used to spend all day applying with no results. Their clear plan and reminders landed me five interviews and a fantastic offer. Thanks, Hirello!"
-  },
-  {
-    name: "Nina R.",
-    image: Girl3,
-    quote: "When I started using Hirello, I was drowning in uncertainty. The platform walked me through creating an impactful résumé and gave me hands-on interview practice that boosted my confidence. The daily to-do lists kept me accountable, and the supportive tone made everything less daunting."
-  },
-  {
-    name: "Oliver B.",
-    image: Boy16,
-    quote: "Totally recommend it. The job search was overwhelming, but Hirello gave me structure and confidence."
-  },
-  {
-    name: "Samantha K.",
-    image: Girl5,
-    quote: "Although my résumé was strong, the Skill-Gap Analyzer showed me exactly where I needed to focus to reach the next level."
-  },
-  {
-    name: "Emily S.",
-    image: Girl6,
-    quote: "I thought my elevator pitch was sharp, but Hirello’s Pitch Perfector polished it even further—while still letting me sound like myself."
-  },
-  {
-    name: "Rachel H.",
-    image: Girl7,
-    quote: "I figured I knew everything about job hunting—I’d read the books—but Hirello’s tips eventually landed me a job. They exceeded my expectations."
-  },
-  {
-    name: "Quentin H.",
-    image: Boy11,
-    quote: "I found Hirello when I desperately needed structure. The platform guided me through every step. I got a great offer and I’m taking it!"
-  },
-  {
-    name: "Morgan K.",
-    image: Boy12,
-    quote: "My résumé is 100 % better—I know because I’m actually getting callbacks and interviews now!"
-  },
-  {
-    name: "Nicole S.",
-    image: Boy13,
-    quote: "AI Alex was surprisingly helpful—great advice every time, even for salary negotiations. I didn’t get much more, but I did get more than the initial offer, so I’m happy."
-  },
-  {
-    name: "Kendra L.",
-    image: Boy14,
-    quote: "I appreciated every feature on the dashboard—they all helped."
+    name: "Nathalie J.",
+    image: Girl1,
+    quote: "Before Hirello, I was overwhelmed by endlessly sending applications with no clear strategy. The personalized coaching sessions helped me identify and strengthen weak areas, and I quickly learned how to tailor my résumé and discover alternate roles I was suited for. The AI tools were awesome and saved me a ton of time. I’d definitely recommend Hirello—and use it again."
   },
   {
     name: "Lucas V.",
@@ -194,14 +99,34 @@ const reviews = [
     quote: "Hirello streamlined my entire job-search process. With its effective résumé builder and insightful interview simulations, I felt more prepared and confident every day. The daily progress reports and reminders kept me accountable, ensuring I never missed a step. I only got to Day 24—because that’s when I landed my offer."
   },
   {
-    name: "Priya D.",
-    image: Girl4,
-    quote: "I loved how Hirello’s simple suggestions improved my networking without making me feel pushy."
+    name: "Madison M.",
+    image: Boy2,
+    quote: "Super happy with the value I got from Hirello! Their day-by-day action plan kept me organized and motivated, and the résumé optimizer improved my profile so much that I honestly felt more confident. Within a month I was landing far more—and higher-quality—interviews. Really appreciate it!"
   },
   {
-    name: "Jake L.",
-    image: Boy17,
-    quote: "Hirello’s coaching added just the right amount of polish to my interview prep."
+    name: "Dana L.",
+    image: Boy4,
+    quote: "I was hesitant to rely on an online career solution, but Hirello exceeded my expectations. The advanced AI coaching gave me practical tips that significantly boosted my interview performance. I loved the daily videos, job-search tips, and challenges. Best of all, I got hired!"
+  },
+  {
+    name: "Derek F.",
+    image: Boy8,
+    quote: "Hirello was essential in my career transition. The interactive coaching sessions and detailed résumé feedback were both practical and motivating. Every feature was designed to deliver real-world results in a competitive market. I’ve seen a big improvement in my interview performance and overall prospects."
+  },
+  {
+    name: "Nina R.",
+    image: Girl3,
+    quote: "When I started using Hirello, I was drowning in uncertainty. The platform walked me through creating an impactful résumé and gave me hands-on interview practice that boosted my confidence. The daily to-do lists kept me accountable, and the supportive tone made everything less daunting."
+  },
+  {
+    name: "Hannah K.",
+    image: Boy7,
+    quote: "Hirello was life-changing during my career transition. The intuitive coaching and detailed résumé feedback helped me position myself as a strong candidate, and the interview simulations boosted my confidence. Every interaction felt designed for my success."
+  },
+  {
+    name: "Jasmine W.",
+    image: Girl2,
+    quote: "I struggled to get noticed in a competitive market, but Hirello changed that. The platform guided me through résumé enhancements, LinkedIn optimizations, and simulated interviews. Each step added up, and now I’m fielding offers from awesome companies. Thank you!"
   },
   {
     name: "Umar W.",
@@ -209,9 +134,85 @@ const reviews = [
     quote: "Before Hirello, my job search felt totally overwhelming. Their system not only optimized my résumé but also provided a detailed roadmap to follow. The blend of tech and human insight boosted my interview skills and confidence—and above all, I got a job!"
   },
   {
+    name: "George T.",
+    image: Boy6,
+    quote: "With Hirello, I finally had a streamlined process that made sense. Their AI combined with daily checklists kept me accountable, and after months of crickets I finally started getting interviews."
+  },
+  {
+    name: "Marcus J.",
+    image: Boy10,
+    quote: "Hirello helped me focus on what matters. I used to spend all day applying with no results. Their clear plan and reminders landed me five interviews and a fantastic offer. Thanks, Hirello!"
+  },
+  {
+    name: "Owen R.",
+    image: Boy3,
+    quote: "I wasn’t sure this was right for me—I'm a seasoned professional—but at that price I figured, why not? I was shocked by how much I got. Easily worth hundreds of dollars."
+  },   
+  {
+    name: "Nicole S.",
+    image: Boy13,
+    quote: "AI Alex was surprisingly helpful—great advice every time, even for salary negotiations. I didn’t get much more, but I did get more than the initial offer, so I’m happy."
+  },
+  {
     name: "Vanessa J.",
     image: Boy19,
     quote: "Treating the job search like a project, as Hirello suggested, made a huge difference. Five weeks later I met my deadline—landed the exact job I wanted. Thanks, Hirello!"
+  }, 
+  {
+    name: "Rachel H.",
+    image: Girl7,
+    quote: "I figured I knew everything about job hunting—I’d read the books—but Hirello’s tips eventually landed me a job. They exceeded my expectations."
+  },
+  {
+    name: "Ian D.",
+    image: Boy9,
+    quote: "Before signing up I compared several programs. This was not only the most affordable—it was the best of the bunch. It had everything I needed."
+  },
+  {
+    name: "Emily S.",
+    image: Girl6,
+    quote: "I thought my elevator pitch was sharp, but Hirello’s Pitch Perfector polished it even further—while still letting me sound like myself."
+  },
+  {
+    name: "Quentin H.",
+    image: Boy11,
+    quote: "I found Hirello when I desperately needed structure. The platform guided me through every step. I got a great offer and I’m taking it!"
+  },
+
+  {
+    name: "Samantha K.",
+    image: Girl5,
+    quote: "Although my résumé was strong, the Skill-Gap Analyzer showed me exactly where I needed to focus to reach the next level."
+  },
+  {
+    name: "Oliver B.",
+    image: Boy16,
+    quote: "Totally recommend it. The job search was overwhelming, but Hirello gave me structure and confidence."
+  },
+  {
+    name: "Priya D.",
+    image: Girl4,
+    quote: "I loved how Hirello’s simple suggestions improved my networking without making me feel pushy."
+  },
+  {
+    name: "Morgan K.",
+    image: Boy12,
+    quote: "My résumé is 100 % better—I know because I’m actually getting callbacks and interviews now!"
+  },
+  {
+    name: "Jake L.",
+    image: Boy17,
+    quote: "Hirello’s coaching added just the right amount of polish to my interview prep."
+  },
+  {
+    name: "Kendra L.",
+    image: Boy14,
+    quote: "I appreciated every feature on the dashboard—they all helped."
+  },  
+  {
+    name: "Samir A.",
+    image: Boy20,
+    quote: "HIRED!!!!!!!!!",
   },
 ];
 
