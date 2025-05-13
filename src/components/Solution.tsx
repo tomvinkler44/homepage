@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 export default function Solution() {
   return (
-    <div className="container">
+    <div className="container flex flex-col justify-center">
       <h1>There's A Better Way To Get Hired</h1>
       <h2>Stop applying. Start connecting.</h2>
 
@@ -166,7 +167,20 @@ export default function Solution() {
         </div>
       </div>
 
-      <a href="/pricing" className="cta-button">
+      <motion.a
+        href="/pricing"
+        className="cta-button mx-auto"
+        animate={{
+          y: [0, -8, 0],
+          scale: [1, 1.02, 1],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        }}
+      >
         Get Our 30-Day Action Plan
         <svg
           className="arrow-icon"
@@ -184,7 +198,7 @@ export default function Solution() {
             strokeLinejoin="round"
           />
         </svg>
-      </a>
+      </motion.a>
     </div>
   );
 }

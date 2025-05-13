@@ -12,9 +12,9 @@ import { motion } from "framer-motion";
 const features = [
   {
     icon: UserIcon,
-    title: "AI Interview Practice",
+    title: "30 Day Action Plan",
     description:
-      "Practice with our AI interviewer and get real-time feedback on your answers to dramatically improve your performance.",
+      "Follow our proven, step-by-step system with daily tasks and video lessons designed to get you hired  ASAP.",
   },
   {
     icon: BriefcaseIcon,
@@ -24,9 +24,9 @@ const features = [
   },
   {
     icon: CalendarIcon,
-    title: "AI Interview Practice cards",
+    title: "AI Practice Interviews",
     description:
-      "Follow our proven, step-by-step system with daily tasks and video lessons designed to get you hired.",
+      "Practice with our AI interviewer and get real-time feedback on your answers to dramatically improve your performance.",
   },
   {
     icon: MessageSquareIcon,
@@ -42,9 +42,9 @@ const features = [
   },
   {
     icon: BarChartIcon,
-    title: "Progress Tracking",
+    title: "Outreach Manager",
     description:
-      "Monitor your job search activities and results with our comprehensive tracking system.",
+      "Track target companies, key contacts, and your next networking actions. Stay organized and focused on landing your next role.",
   },
 ];
 

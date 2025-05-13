@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isInstitutionalOpen, setIsInstitutionalOpen] = useState(false);
+  const [isProgramOpen, setIsProgramOpen] = useState(false);
 
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
@@ -17,15 +17,8 @@ export default function Navbar() {
     }
   }, [isMobileMenuOpen]);
 
-  const institutionalItems = [
-    { title: "Why partner with us", href: "#" },
-    { title: "University Career Centers", href: "#" },
-    { title: "Outplacement Services", href: "#" },
-    { title: "Government and non-profit", href: "#" },
-    { title: "Alumni Associations", href: "#" },
-    { title: "Professional Organizations", href: "#" },
-    { title: "Corporate HR", href: "#" },
-    { title: "Workforce Development", href: "#" },
+  const programItems = [
+    { title: "Interview Practice", href: "/interview-practice" },
   ];
 
   return (
@@ -34,10 +27,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo Section */}
           <div className="block sm:flex items-center">
-            <Link
-              to="/"
-              className="flex items-center justify-center"
-            >
+            <Link to="/" className="flex items-center justify-center">
               <img
                 src="/assests/images/hirello-logo.png"
                 alt="logo"
@@ -47,23 +37,22 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-           <div className="hidden lg:flex items-center space-x-8">
-            {/* Institutional Solutions Dropdown */}
-            {/*  <div 
+          <div className="hidden lg:flex items-center space-x-8">
+            <div
               className="relative"
-              onMouseEnter={() => setIsInstitutionalOpen(true)}
-              onMouseLeave={() => setIsInstitutionalOpen(false)}
+              onMouseEnter={() => setIsProgramOpen(true)}
+              onMouseLeave={() => setIsProgramOpen(false)}
             >
-              <motion.button
-                className="flex items-center text-gray-600 hover:text-gray-900 transition-colors group"
+              <motion.a
+                href="/program"
+                className="text-gray-600 hover:text-gray-900 transition-colors flex items-center"
                 whileHover={{ scale: 1.05 }}
               >
-                Institutional Solutions
+                Program
                 <ChevronDownIcon className="h-4 w-4 ml-1 transform transition-transform group-hover:rotate-180" />
-              </motion.button>
-              
+              </motion.a>
               <AnimatePresence>
-                {isInstitutionalOpen && (
+                {isProgramOpen && (
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -71,7 +60,7 @@ export default function Navbar() {
                     transition={{ duration: 0.15 }}
                     className="absolute left-0 mt-2 w-72 bg-[#0F172A] rounded-lg shadow-lg border border-gray-800 py-2 z-50"
                   >
-                    {institutionalItems.map((item, index) => (
+                    {programItems.map((item, index) => (
                       <motion.a
                         key={index}
                         href={item.href}
@@ -91,28 +80,26 @@ export default function Navbar() {
                 )}
               </AnimatePresence>
             </div>
-            */}
-
-            <motion.a
-              href="/interview-practice"
-              className="text-gray-600 hover:text-gray-900 transition-colors"
-              whileHover={{ scale: 1.05 }}
-            >
-              Interview Practice
-            </motion.a>
-            <motion.a
-              href="/program"
-              className="text-gray-600 hover:text-gray-900 transition-colors"
-              whileHover={{ scale: 1.05 }}
-            >
-              Program
-            </motion.a>
             <motion.a
               href="/pricing"
               className="text-gray-600 hover:text-gray-900 transition-colors"
               whileHover={{ scale: 1.05 }}
             >
               Pricing
+            </motion.a>
+            <motion.a
+              href="/testimonials"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+              whileHover={{ scale: 1.05 }}
+            >
+              Testimonials
+            </motion.a>
+            <motion.a
+              href="https://blog.hirello.ai"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+              whileHover={{ scale: 1.05 }}
+            >
+              Knowledge Base
             </motion.a>
             <motion.a
               href="https://dashboard.hirello.ai"
@@ -127,16 +114,9 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
               className="gradient-bg-orange text-white px-6 py-2 rounded-lg hover:opacity-90 transition shadow-soft button-hover"
             >
-              Let's Get Me Hired
+              Lets Get Me Hired
             </motion.a>
-            <motion.a
-              href="https://blog.hirello.ai"
-              className="text-gray-600 hover:text-gray-900 transition-colors font-semibold"
-              whileHover={{ scale: 1.05 }}
-            >
-              Knowledge Base
-            </motion.a>
-          </div> 
+          </div>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
@@ -153,59 +133,19 @@ export default function Navbar() {
         {/* Mobile Menu Dropdown */}
         {isMobileMenuOpen && (
           <div className="lg:hidden h-screen text-center z-50 mt-4 space-y-4 px-2 pb-4">
-            {/* Mobile Institutional Solutions Dropdown */}
-            {/* <div className="relative">
-              <button
-                onClick={() => setIsInstitutionalOpen(!isInstitutionalOpen)}
-                className="flex items-center justify-center w-full text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                Institutional Solutions
-                <ChevronDownIcon className={`h-4 w-4 ml-1 transform transition-transform ${isInstitutionalOpen ? 'rotate-180' : ''}`} />
-              </button>
-              
-              <AnimatePresence>
-                {isInstitutionalOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.15 }}
-                    className="mt-2 space-y-2 bg-[#0F172A] rounded-lg p-2"
-                  >
-                    {institutionalItems.map((item, index) => (
-                      <motion.a
-                        key={index}
-                        href={item.href}
-                        className="block text-gray-300 hover:text-white transition-all relative group/item pl-4 py-2"
-                        whileHover={{ x: 4 }}
-                      >
-                        <span className="relative z-10">{item.title}</span>
-                        <motion.div
-                          className="absolute inset-0 bg-gray-700/20 rounded-md"
-                          initial={{ scale: 0, opacity: 0 }}
-                          whileHover={{ scale: 1, opacity: 1 }}
-                          transition={{ duration: 0.1 }}
-                        />
-                      </motion.a>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div> */}
-
-            <motion.a
-              href="/interview-practice"
-              className="block text-gray-600 hover:text-gray-900 transition-colors"
-              whileHover={{ scale: 1.05 }}
-            >
-              Interview Practice
-            </motion.a>
             <motion.a
               href="/program"
-              className="block text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-gray-600 hover:text-gray-900 transition-colors block"
               whileHover={{ scale: 1.05 }}
             >
               Program
+            </motion.a>
+             <motion.a
+              href="/interview-practice"
+              className="text-gray-600 hover:text-gray-900 transition-colors block"
+              whileHover={{ scale: 1.05 }}
+            >
+              Interview Practice
             </motion.a>
             <motion.a
               href="/pricing"
@@ -213,6 +153,20 @@ export default function Navbar() {
               whileHover={{ scale: 1.05 }}
             >
               Pricing
+            </motion.a>
+            <motion.a
+              href="/testimonials"
+              className="block text-gray-600 hover:text-gray-900 transition-colors"
+              whileHover={{ scale: 1.05 }}
+            >
+              Testimonials
+            </motion.a>
+            <motion.a
+              href="https://blog.hirello.ai"
+              className="block text-gray-600 hover:text-gray-900 transition-colors"
+              whileHover={{ scale: 1.05 }}
+            >
+              Knowledge Base
             </motion.a>
             <motion.a
               href="https://dashboard.hirello.ai"
@@ -227,14 +181,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
               className="w-full block text-center gradient-bg-orange text-white px-6 py-2 rounded-lg hover:opacity-90 transition shadow-soft button-hover"
             >
-              Let's Get Me Hired
-            </motion.a>
-            <motion.a
-              href="https://blog.hirello.ai"
-              className="block text-gray-600 hover:text-gray-900 transition-colors font-semibold"
-              whileHover={{ scale: 1.05 }}
-            >
-              Knowledge Base
+              Lets Get Me Hired
             </motion.a>
           </div>
         )}

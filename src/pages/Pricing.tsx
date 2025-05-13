@@ -111,8 +111,8 @@ export default function Pricing() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 ${
-                plan.popular ? "ring-2 ring-blue-500" : ""
+              className={`bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex justify-between flex-col p-8 ${
+                plan.popular ? "ring-2 ring-blue-500 p-0" : ""
               }`}
             >
               {plan.popular && (
@@ -120,7 +120,7 @@ export default function Pricing() {
                   Most Popular
                 </div>
               )}
-              <div className="p-8">
+              <div className={`${plan.popular ? "p-8" : ""}`}>
                 <h2 className="text-2xl font-bold mb-4">{plan.name}</h2>
                 <div className="mb-6">
                   <div className="flex items-start">
@@ -151,6 +151,22 @@ export default function Pricing() {
                     ? "bg-green-500 text-white hover:bg-green-600"
                     : "bg-gray-100 text-gray-900 hover:bg-gray-200"
                 }`} */}
+                {plan.popular && (
+                  <Link
+                    to="https://dashboard.hirello.ai/login"
+                    target="_blank"
+                    className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
+                  >
+                    {plan.buttonText}
+                  </Link>
+                )}
+                {/* {plan.alternateButton && (
+                  <button className="w-full py-3 px-4 rounded-md font-semibold bg-gray-100 text-gray-900 hover:bg-gray-200">
+                    {plan.alternateButton.text}
+                  </button>
+                )} */}
+              </div>
+              {!plan.popular && (
                 <Link
                   to="https://dashboard.hirello.ai/login"
                   target="_blank"
@@ -158,12 +174,7 @@ export default function Pricing() {
                 >
                   {plan.buttonText}
                 </Link>
-                {/* {plan.alternateButton && (
-                  <button className="w-full py-3 px-4 rounded-md font-semibold bg-gray-100 text-gray-900 hover:bg-gray-200">
-                    {plan.alternateButton.text}
-                  </button>
-                )} */}
-              </div>
+              )}
             </div>
           ))}
         </div>
@@ -176,9 +187,9 @@ export default function Pricing() {
           {coachingPlans.map((plan) => (
             <div
               key={plan.name}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
+              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex justify-between flex-col p-8"
             >
-              <div className="p-8">
+              <div>
                 <h2 className="text-2xl font-bold mb-4">{plan.name}</h2>
                 <div className="mb-6">
                   <div className="flex items-start">
@@ -195,15 +206,15 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  to="https://dashboard.hirello.ai/login"
-                  target="_blank"
-                  type="button"
-                  className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
-                >
-                  {plan.buttonText}
-                </Link>
               </div>
+              <Link
+                to="https://dashboard.hirello.ai/login"
+                target="_blank"
+                type="button"
+                className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
+              >
+                {plan.buttonText}
+              </Link>
             </div>
           ))}
         </div>
@@ -216,9 +227,9 @@ export default function Pricing() {
           {standaloneProducts.map((product) => (
             <div
               key={product.name}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
+              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex justify-between flex-col p-8"
             >
-              <div className="p-8">
+              <div>
                 <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
                 <div className="mb-6">
                   <div className="flex items-start">
@@ -227,14 +238,14 @@ export default function Pricing() {
                     <span className="text-gray-600 ml-1">{product.period}</span>
                   </div>
                 </div>
-                <Link
-                  to="https://dashboard.hirello.ai/login"
-                  target="_blank"
-                  className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
-                >
-                  {product.buttonText}
-                </Link>
               </div>
+              <Link
+                to="https://dashboard.hirello.ai/login"
+                target="_blank"
+                className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
+              >
+                {product.buttonText}
+              </Link>
             </div>
           ))}
         </div>

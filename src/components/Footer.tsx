@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="flex items-center mb-4">
               <BriefcaseIcon className="h-8 w-8 text-blue-400" />
               <span className="ml-2 text-xl font-bold text-white">
-                Job in 60 Days
+                Get Hired with Hirello
               </span>
             </div>
             <p className="text-gray-400">
@@ -39,10 +39,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/pricing"
+                  to="/testimonials"
                   className="hover:text-white transition-colors"
                 >
-                  Pricing
+                  Testimonials
                 </Link>
               </li>
               <li>
@@ -65,7 +65,7 @@ export default function Footer() {
                   href="https://blog.hirello.ai"
                   className="hover:text-white transition-colors"
                 >
-                  Blog
+                  Knowledge Base
                 </a>
               </li>
               <li>

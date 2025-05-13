@@ -1,6 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function CTA() {
   return (
@@ -53,14 +53,16 @@ export default function CTA() {
           </motion.a>
         </motion.div>
         <motion.div
-          className="text-green-400 mt-8 font-semibold text-lg flex items-center justify-center gap-2"
+          className="uppercase text-green-400 mt-8 font-semibold text-lg flex items-center justify-center gap-2"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
+          <Link to="/money-back" className="flex gap-2 items-center">
           <Sparkles className="w-5 h-5" />
-          60 Day Job Guarantee
+          Money Back Guarantee
           <Sparkles className="w-5 h-5" />
+          </Link>
         </motion.div>
       </div>
     </div>

@@ -1,14 +1,5 @@
-import React from "react";
-import { Star, Gem } from "lucide-react";
-import verifiedProfile from "./../../public/assests/images/verified-profile-icon.png";
-import LikeIcon from "./../../public/assests/images/Like.svg";
+import { Star } from "lucide-react";
 import QuoteImg from "./../../public/assests/images/quote-img.svg";
-import ClientImg1 from "./../../public/assests/images/client-1.png";
-import ClientImg2 from "./../../public/assests/images/client-2.png";
-import ClientImg3 from "./../../public/assests/images/client-3.png";
-import ClientImg4 from "./../../public/assests/images/client-4.png";
-import ClientImg5 from "./../../public/assests/images/client-5.png";
-import ClientImg6 from "./../../public/assests/images/client-6.png";
 import Boy1 from "./../../public/assests/images/boy1.png";
 import Boy2 from "./../../public/assests/images/boy2.png";
 import Boy3 from "./../../public/assests/images/boy3.png";
@@ -40,74 +31,45 @@ import Girl7 from "./../../public/assests/images/Girl7.png";
 
 const testimonials = [
   {
-    name: "RUSSELL BRUNSON",
-    title: "FOUNDER CLICKFUNNELS",
-    content: `I love Ryan Lee. He's <b class="text-black">masterful at creating super-fast digital lifestyle businesses and continuity income-</b> and truly cares about serving his tribe with warmth, kindness and humor.`,
-    image: ClientImg1,
-  },
-  {
-    name: "RYAN DEISS",
-    title: "FOUNDER: DIGITAL MARKETER",
-    content: `When I held my first marketing event over 15 years ago, Ryan Lee was the first guy I brought in to teach 'continuity Income. <b class="text-black">There's no one with a longer, more impressive track record of recurring revenue than that "other" Ryan.</b>`,
-    image: ClientImg2,
-  },
-  {
-    name: "JOHN LEE DUMAS",
-    title: "PODCAST PIONEER, HOST OF ENTREPRENEUR ON FIRE",
-    content: `<b class="text-black">Ryan Lee is the guy who guided my membership and continuity programs.</b> I listened to him when I launched my first continuity program and it worked like crazy. In fact, it's still paying off 10 years later`,
-    image: ClientImg3,
-  },
-  {
-    name: "MIKE MICHAELOWICZ",
-    title: "BEST-SELLING AUTHOR OF PROFIT FIRST",
-    content: `Ryan Lee is entrepreneurial genius blended kindness and generosity. He is <b class="text-black">my go to source for sucess with soul</b> and should be yours too.`,
-    image: ClientImg4,
-  },
-  {
-    name: "CATHY MORENZIE",
-    title: "FOUNDER WEIGHT LOSS GOD'S WAY",
-    content: `When I built my membership and community for Weight Loss for Christian Women, Ryan Lee gave me all the tools to make it happen. <b class="text-black">If you want to help others while living your dream life-you must listen to everything Ryan teaches</b> He always delivers the goods!`,
-    image: ClientImg5,
-  },
-  {
-    name: "JONATHAN FIELDS",
-    title: "AWARD-WINNING AUTHOR, PRODUCER, HOST OF GOOD LIFE PROJECT",
-    content: `Ryan has the service-drive heart of an educator, the strategic and operating chops of a seasoned multi-company founder, and the hard-earned insights of a creator who understands not only the value of what he's building, but also the life he wants to live`,
-    image: ClientImg6,
-  },
-];
-
-const reviews = [
-  {
     name: "Evan P.",
+    title: "FOUNDER CLICKFUNNELS",
+    content: `To be honest, I was a bit skeptical, but the price seemed reasonable—and boy am I glad I tried it! Hirello helped me structure my approach, which I didn’t realize I needed until I saw it in action. The sheer amount of helpful content for the price is amazing. It’s like having a professional career coach, a suite of tools, AI, training, and mock interviews—all broken into bite-sized daily tasks. Everything you need is there; just follow the plan! I’m thrilled to say I landed a great job on Day 43. Thank you, Hirello!`,
     image: Boy1,
-    quote: "To be honest, I was a bit skeptical, but the price seemed reasonable—and boy am I glad I tried it! Hirello helped me structure my approach, which I didn’t realize I needed until I saw it in action. The sheer amount of helpful content for the price is amazing. It’s like having a professional career coach, a suite of tools, AI, training, and mock interviews—all broken into bite-sized daily tasks. Everything you need is there; just follow the plan! I’m thrilled to say I landed a great job on Day 43. Thank you, Hirello!"
   },
   {
     name: "Brianna S.",
+    title: "FOUNDER: DIGITAL MARKETER",
+    content: `Hirello’s 30-day course completely changed my job-search approach. The personalized insights showed me which skills to highlight and how to communicate them. Their step-by-step plan kept me on track, and I saw measurable improvements in my application success rate within a week. Now I know that even if I’m laid off again, finding another job won’t be an issue. Cool experience overall.`,
     image: Boy5,
-    quote: "Hirello’s 30-day course completely changed my job-search approach. The personalized insights showed me which skills to highlight and how to communicate them. Their step-by-step plan kept me on track, and I saw measurable improvements in my application success rate within a week. Now I know that even if I’m laid off again, finding another job won’t be an issue. Cool experience overall."
   },
   {
     name: "Nathalie J.",
+    title: "PODCAST PIONEER, HOST OF ENTREPRENEUR ON FIRE",
+    content: `Before Hirello, I was overwhelmed by endlessly sending applications with no clear strategy. The personalized coaching sessions helped me identify and strengthen weak areas, and I quickly learned how to tailor my résumé and discover alternate roles I was suited for. The AI tools were awesome and saved me a ton of time. I’d definitely recommend Hirello—and use it again.`,
     image: Girl1,
-    quote: "Before Hirello, I was overwhelmed by endlessly sending applications with no clear strategy. The personalized coaching sessions helped me identify and strengthen weak areas, and I quickly learned how to tailor my résumé and discover alternate roles I was suited for. The AI tools were awesome and saved me a ton of time. I’d definitely recommend Hirello—and use it again."
   },
   {
     name: "Lucas V.",
+    title: "BEST-SELLING AUTHOR OF PROFIT FIRST",
+    content: `Hirello streamlined my entire job-search process. With its effective résumé builder and insightful interview simulations, I felt more prepared and confident every day. The daily progress reports and reminders kept me accountable, ensuring I never missed a step. I only got to Day 24—because that’s when I landed my offer.`,
     image: Boy15,
-    quote: "Hirello streamlined my entire job-search process. With its effective résumé builder and insightful interview simulations, I felt more prepared and confident every day. The daily progress reports and reminders kept me accountable, ensuring I never missed a step. I only got to Day 24—because that’s when I landed my offer."
   },
   {
     name: "Madison M.",
+    title: "AWARD-WINNING AUTHOR, PRODUCER, HOST OF GOOD LIFE PROJECT",
+    content: `Super happy with the value I got from Hirello! Their day-by-day action plan kept me organized and motivated, and the résumé optimizer improved my profile so much that I honestly felt more confident. Within a month I was landing far more—and higher-quality—interviews. Really appreciate it!`,
     image: Boy2,
-    quote: "Super happy with the value I got from Hirello! Their day-by-day action plan kept me organized and motivated, and the résumé optimizer improved my profile so much that I honestly felt more confident. Within a month I was landing far more—and higher-quality—interviews. Really appreciate it!"
   },
   {
     name: "Dana L.",
+    title: "FOUNDER WEIGHT LOSS GOD'S WAY",
+    content: `I was hesitant to rely on an online career solution, but Hirello exceeded my expectations. The advanced AI coaching gave me practical tips that significantly boosted my interview performance. I loved the daily videos, job-search tips, and challenges. Best of all, I got hired!`,
     image: Boy4,
-    quote: "I was hesitant to rely on an online career solution, but Hirello exceeded my expectations. The advanced AI coaching gave me practical tips that significantly boosted my interview performance. I loved the daily videos, job-search tips, and challenges. Best of all, I got hired!"
   },
+  
+];
+
+const reviews = [
   {
     name: "Derek F.",
     image: Boy8,
@@ -252,9 +214,9 @@ export default function Testimonials() {
                   <h3 className="uppercase font-semibold text-black text-base">
                     {item.name}
                   </h3>
-                  <h6 className="uppercase text-[#3d3d3d] text-sm">
+                  {/* <h6 className="uppercase text-[#3d3d3d] text-sm">
                     {item.title}
-                  </h6>
+                  </h6> */}
                 </div>
                 <div className="overflow-hidden bg-gradient-to-r from-[#ae915c] to-[#f1d789] p-0.5 xl:w-[100px] w-20 xl:h-[100px] h-20 rounded-full absolute xl:bottom-[-50px] bottom-[-40px] left-1/2 translate-x-[-50%]">
                   <img

@@ -27,8 +27,8 @@ export default function Hero() {
                 ease: "easeInOut",
               }}
             >
-              <span className="font-bold">60 DAY JOB GUARANTEE</span>
-              <span className="mx-2">|</span>
+              <span className="font-bold text-xl">60 DAY JOB GUARANTEE</span>
+              <span className="mx-2 text-xl">|</span>
               <span>No Job, Money Back</span>
             </motion.a>
             <h1 className="text-6xl font-bold text-white mb-6 font-heading hero-text-shadow">

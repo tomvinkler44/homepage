@@ -9,9 +9,11 @@ import InterviewPractice from "./pages/InterviewPractice";
 import Contact from "./pages/Contact";
 import MoneyBack from "./pages/MoneyBack";
 import Testimonials from "./pages/Testimonials";
+import ScrollToTop from "./components/ScrollToTop";
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
