@@ -68,10 +68,10 @@ export default function Features() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <AnimatedSection key={index}>
+              <AnimatedSection key={index} className="h-full">
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="bg-white rounded-xl p-4 md:p-8 shadow-soft hover:shadow-hover card-hover"
+                  className="h-full bg-white rounded-xl p-4 md:p-8 shadow-soft hover:shadow-hover card-hover"
                 >
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-3 md:mb-6">
                     <Icon className="w-6 h-6 text-blue-600" />

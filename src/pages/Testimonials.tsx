@@ -66,7 +66,7 @@ const testimonials = [
     content: `I was hesitant to rely on an online career solution, but Hirello exceeded my expectations. The advanced AI coaching gave me practical tips that significantly boosted my interview performance. I loved the daily videos, job-search tips, and challenges. Best of all, I got hired!`,
     image: Boy4,
   },
-  
+
 ];
 
 const reviews = [
@@ -109,7 +109,7 @@ const reviews = [
     name: "Owen R.",
     image: Boy3,
     quote: "I wasn’t sure this was right for me—I'm a seasoned professional—but at that price I figured, why not? I was shocked by how much I got. Easily worth hundreds of dollars."
-  },   
+  },
   {
     name: "Nicole S.",
     image: Boy13,
@@ -119,7 +119,7 @@ const reviews = [
     name: "Vanessa J.",
     image: Boy19,
     quote: "Treating the job search like a project, as Hirello suggested, made a huge difference. Five weeks later I met my deadline—landed the exact job I wanted. Thanks, Hirello!"
-  }, 
+  },
   {
     name: "Rachel H.",
     image: Girl7,
@@ -170,7 +170,7 @@ const reviews = [
     name: "Kendra L.",
     image: Boy14,
     quote: "I appreciated every feature on the dashboard—they all helped."
-  },  
+  },
   {
     name: "Samir A.",
     image: Boy20,
@@ -180,89 +180,102 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <div className="pt-28 md:pt-32">
-      <div className="bg-white pb-10 md:pb-12 border-b border-[#cacaca]">
+    <div>
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white pt-28 pb-10 md:pt-32 md:pb-15">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-x-[132px] md:gap-x-[50px] gap-x-10 md:gap-y-[100px] gap-y-[90px] pt-6 lg:pb-[50px] pb-10">
-            {testimonials.map((item, index) => (
-              <div
-                key={index}
-                className="bg-[#e9e8e9] rounded-3xl text-center px-4 pt-10 pb-[60px] relative flex flex-col gap-2 min-h-[350px]"
-              >
-                <div className="absolute left-1/2 translate-x-[-50%] xl:top-[-24px] top-[-20px] xl:w-[70px] w-[60px]">
-                  <img
-                    src={QuoteImg}
-                    alt="Quote-Img"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex items-center justify-center">
-                  <div className="flex gap-1 text-yellow-400">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="xl:w-6 w-5 xl:h-6 h-6 fill-current"
-                      />
-                    ))}
-                  </div>
-                </div>
-                <blockquote
-                  className="text-[#3d3d3d] flex-1"
-                  dangerouslySetInnerHTML={{ __html: `"${item.content}"` }}
-                />
-                <div>
-                  <h3 className="uppercase font-semibold text-black text-base">
-                    {item.name}
-                  </h3>
-                  {/* <h6 className="uppercase text-[#3d3d3d] text-sm">
-                    {item.title}
-                  </h6> */}
-                </div>
-                <div className="overflow-hidden bg-gradient-to-r from-[#ae915c] to-[#f1d789] p-0.5 xl:w-[100px] w-20 xl:h-[100px] h-20 rounded-full absolute xl:bottom-[-50px] bottom-[-40px] left-1/2 translate-x-[-50%]">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            ))}
+          <div className="text-center">
+            <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+              Testimonials
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+              See why our customers love our solution!
+            </p>
           </div>
         </div>
-      </div>
-      <div className="bg-white py-10 md:py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-x-10 gap-x-8 sm:gap-y-8 gap-y-6">
-            {reviews.map((review, index) => (
-              <div key={index}>
-                <div className="flex gap-2">
-                  <div className="relative flex flex-col items-center">
-                    <div className="sm:w-10 w-8 sm:min-h-10 min-h-8 sm:h-10 h-8 rounded-full overflow-hidden">
-                      <img
-                        src={review.image}
-                        alt="Client-Img"
-                        className="w-full h-full object-cover rounded-full"
-                      />
+      </section>
+      <div className="py-10 md:py-20">
+        <div className="bg-white pb-10 md:pb-12 border-b border-[#cacaca]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-x-[132px] md:gap-x-[50px] gap-x-10 md:gap-y-[100px] gap-y-[90px] pt-6 lg:pb-[50px] pb-10">
+              {testimonials.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-[#e9e8e9] rounded-3xl text-center px-4 pt-10 pb-[60px] relative flex flex-col gap-2 min-h-[350px]"
+                >
+                  <div className="absolute left-1/2 translate-x-[-50%] xl:top-[-24px] top-[-20px] xl:w-[70px] w-[60px]">
+                    <img
+                      src={QuoteImg}
+                      alt="Quote-Img"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <div className="flex gap-1 text-yellow-400">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="xl:w-6 w-5 xl:h-6 h-6 fill-current"
+                        />
+                      ))}
                     </div>
                   </div>
-                  <div className="flex flex-col gap-0.5 flex-1">
-                    <div className="relative">
-                      <div className="bg-[#f1f2f6] rounded-xl py-2 px-2 flex flex-col gap-0.5">
-                        <div className="flex items-center gap-1">
-                          <h6 className="text-sm font-semibold text-black">
-                            {review.name}
-                          </h6>
+                  <blockquote
+                    className="text-[#3d3d3d] flex-1"
+                    dangerouslySetInnerHTML={{ __html: `"${item.content}"` }}
+                  />
+                  <div>
+                    <h3 className="uppercase font-semibold text-black text-base">
+                      {item.name}
+                    </h3>
+                    {/* <h6 className="uppercase text-[#3d3d3d] text-sm">
+                    {item.title}
+                  </h6> */}
+                  </div>
+                  <div className="overflow-hidden bg-gradient-to-r from-[#ae915c] to-[#f1d789] p-0.5 xl:w-[100px] w-20 xl:h-[100px] h-20 rounded-full absolute xl:bottom-[-50px] bottom-[-40px] left-1/2 translate-x-[-50%]">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="bg-white py-10 md:py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-x-10 gap-x-8 sm:gap-y-8 gap-y-6">
+              {reviews.map((review, index) => (
+                <div key={index}>
+                  <div className="flex gap-2">
+                    <div className="relative flex flex-col items-center">
+                      <div className="sm:w-10 w-8 sm:min-h-10 min-h-8 sm:h-10 h-8 rounded-full overflow-hidden">
+                        <img
+                          src={review.image}
+                          alt="Client-Img"
+                          className="w-full h-full object-cover rounded-full"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-0.5 flex-1">
+                      <div className="relative">
+                        <div className="bg-[#f1f2f6] rounded-xl py-2 px-2 flex flex-col gap-0.5">
+                          <div className="flex items-center gap-1">
+                            <h6 className="text-sm font-semibold text-black">
+                              {review.name}
+                            </h6>
+                          </div>
+                          <p className="text-xs text-black">
+                            {review.quote}
+                          </p>
                         </div>
-                        <p className="text-xs text-black">
-                          {review.quote}
-                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-            {/* <div>
+              ))}
+              {/* <div>
               <div className="flex gap-2">
                 <div className="relative flex flex-col items-center">
                   <div className="sm:w-10 w-8 sm:min-h-10 min-h-8 sm:h-10 h-8 rounded-full overflow-hidden">
@@ -660,6 +673,7 @@ export default function Testimonials() {
                 </div>
               </div>
             </div> */}
+            </div>
           </div>
         </div>
       </div>

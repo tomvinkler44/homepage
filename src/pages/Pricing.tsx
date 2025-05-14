@@ -111,8 +111,8 @@ export default function Pricing() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex justify-between flex-col p-8 ${
-                plan.popular ? "ring-2 ring-blue-500 p-0" : ""
+              className={`bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex justify-between flex-col ${
+                plan.popular ? "ring-2 ring-blue-500 p-0" : "p-8"
               }`}
             >
               {plan.popular && (
