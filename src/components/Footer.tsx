@@ -37,14 +37,14 @@ export default function Footer() {
                   Program
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/testimonials"
                   className="hover:text-white transition-colors"
                 >
                   Testimonials
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   to="/contact"

@@ -87,13 +87,13 @@ export default function Navbar() {
             >
               Pricing
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="/testimonials"
               className="text-gray-600 hover:text-gray-900 transition-colors"
               whileHover={{ scale: 1.05 }}
             >
               Testimonials
-            </motion.a>
+            </motion.a> */}
             <motion.a
               href="https://blog.hirello.ai"
               className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -154,13 +154,13 @@ export default function Navbar() {
             >
               Pricing
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="/testimonials"
               className="block text-gray-600 hover:text-gray-900 transition-colors"
               whileHover={{ scale: 1.05 }}
             >
               Testimonials
-            </motion.a>
+            </motion.a> */}
             <motion.a
               href="https://blog.hirello.ai"
               className="block text-gray-600 hover:text-gray-900 transition-colors"

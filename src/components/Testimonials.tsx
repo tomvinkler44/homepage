@@ -1,4 +1,3 @@
-import React from "react";
 import { Star, Quote } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -35,7 +34,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <div className="bg-white py-10 md:py-12">
-      <Link to="/testimonials">
+      {/* <Link to="/testimonials"> */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mx-auto mb-16">
             <h2 className="text-4xl font-bold mb-4">Real People, Real Results</h2>
@@ -80,7 +79,7 @@ export default function Testimonials() {
             ))}
           </div>
         </div>
-      </Link>
+      {/* </Link> */}
     </div>
   );
 }

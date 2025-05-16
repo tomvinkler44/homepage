@@ -169,7 +169,7 @@ export default function Solution() {
 
       <motion.a
         href="/pricing"
-        className="cta-button mx-auto"
+        className="cta-button get-hired mx-auto"
         animate={{
           y: [0, -8, 0],
           scale: [1, 1.02, 1],
@@ -181,7 +181,7 @@ export default function Solution() {
           ease: "easeInOut",
         }}
       >
-        Get Our 30-Day Action Plan
+        I'm Ready to Get Hired!
         <svg
           className="arrow-icon"
           width="20"
