@@ -8,10 +8,10 @@ export default function Pricing() {
       price: "0",
       period: "/month",
       features: [
-        "Cover letter creator",
-        "Elevator Pitches",
-        "Skill-Gap Analysis",
-        "Career GPS",
+        { text: "Cover letter creator", subtext: "" },
+        { text: "Elevator Pitches", subtext: "" },
+        { text: "Skill-Gap Analysis", subtext: "" },
+        { text: "Career GPS", subtext: "" },
       ],
       buttonText: "Get Started",
       buttonStyle: "secondary",
@@ -23,11 +23,11 @@ export default function Pricing() {
       quarterlyPrice: "19.95",
       quarterlyDiscount: "20%",
       features: [
-        "30-Day Program",
-        "Everything in Free +",
-        "Application Tracker",
-        "Messaging Platform",
-        "Task Management",
+        { text: "30-Day Program", subtext: "" },
+        { text: "Everything in Free +", subtext: "" },
+        { text: "Application Tracker", subtext: "" },
+        { text: "Messaging Platform", subtext: "" },
+        { text: "Task Management", subtext: "" },
       ],
       buttonText: "Upgrade",
       buttonStyle: "primary",
@@ -40,10 +40,10 @@ export default function Pricing() {
       quarterlyDiscount: "30%",
       popular: true,
       features: [
-        "Everything in Basic +",
-        "Resume Optimizer",
-        "LinkedIn Optimizer",
-        "Interview Practice (6 interviews/month)",
+        { text: "Everything in Basic +", subtext: "" },
+        { text: "Resume Optimizer", subtext: "" },
+        { text: "LinkedIn Optimizer", subtext: "" },
+        { text: "Interview Practice", subtext: "(6 interviews/month)" },
       ],
       buttonText: "Upgrade",
       buttonStyle: "success",
@@ -60,8 +60,8 @@ export default function Pricing() {
       price: "157",
       period: "/month",
       features: [
-        "Everything in Pro +",
-        "30 minutes of Career/Job Coaching by Expert Career Coach (human)",
+        { text: "Everything in Pro +", subtext: "" },
+        { text: "30 minutes of Career/Job Coaching by Expert Career Coach (human)", subtext: "" },
       ],
       buttonText: "Upgrade",
       buttonStyle: "primary",
@@ -71,8 +71,8 @@ export default function Pricing() {
       price: "850",
       period: "/month",
       features: [
-        "Everything in Pro +",
-        "4 x 50 minutes of Comprehensive Career Coaching",
+        { text: "Everything in Pro +", subtext: "" },
+        { text: "4 x 50 minutes of Comprehensive Career Coaching", subtext: "" },
       ],
       buttonText: "Upgrade",
       buttonStyle: "primary",
@@ -111,9 +111,8 @@ export default function Pricing() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex justify-between flex-col ${
-                plan.popular ? "ring-2 ring-blue-500 p-0" : "p-8"
-              }`}
+              className={`bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 flex justify-between flex-col ${plan.popular ? "ring-2 ring-blue-500 p-0" : "p-8"
+                }`}
             >
               {plan.popular && (
                 <div className="bg-blue-500 text-white text-center py-2">
@@ -137,10 +136,15 @@ export default function Pricing() {
                   )}
                 </div>
                 <ul className="space-y-4 mb-8">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start">
+                  {plan.features.map((feature, index) => (
+                    <li key={index} className="flex items-center">
                       <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0" />
-                      <span>{feature}</span>
+                      <div>
+                        <div>{feature.text}</div>
+                        {feature.subtext && (
+                          <div>{feature.subtext}</div>
+                        )}
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -153,7 +157,7 @@ export default function Pricing() {
                 }`} */}
                 {plan.popular && (
                   <Link
-                    to="https://dashboard.hirello.ai/login"
+                    to="https://dashboard.hirello.ai/pricing"
                     target="_blank"
                     className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
                   >
@@ -168,7 +172,7 @@ export default function Pricing() {
               </div>
               {!plan.popular && (
                 <Link
-                  to="https://dashboard.hirello.ai/login"
+                  to="https://dashboard.hirello.ai/pricing"
                   target="_blank"
                   className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
                 >
@@ -199,16 +203,21 @@ export default function Pricing() {
                   </div>
                 </div>
                 <ul className="space-y-4 mb-8">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start">
+                  {plan.features.map((feature, index) => (
+                    <li key={index} className="flex items-center">
                       <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0" />
-                      <span>{feature}</span>
+                      <div>
+                        <div>{feature.text}</div>
+                        {feature.subtext && (
+                          <div>{feature.subtext}</div>
+                        )}
+                      </div>
                     </li>
                   ))}
                 </ul>
               </div>
               <Link
-                to="https://dashboard.hirello.ai/login"
+                to="https://dashboard.hirello.ai/pricing"
                 target="_blank"
                 type="button"
                 className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
@@ -240,7 +249,7 @@ export default function Pricing() {
                 </div>
               </div>
               <Link
-                to="https://dashboard.hirello.ai/login"
+                to="https://dashboard.hirello.ai/pricing"
                 target="_blank"
                 className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
               >

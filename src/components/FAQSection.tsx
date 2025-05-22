@@ -110,7 +110,7 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
     },
     {
       question:
-        'How do I know if the "Job in 30 Days" program is right for me?',
+        'How do I know if the "Hirello" program is right for me?',
       answer: (
         <p>
           If you're motivated to take a proactive approach to your job search,
