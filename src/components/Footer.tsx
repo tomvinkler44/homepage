@@ -92,18 +92,21 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
               <a
+                target="_blank"
                 href="https://youtube.com/hirello"
                 className="text-gray-400 hover:text-red-500 transition-colors transform hover:scale-110"
               >
                 <Youtube className="w-8 h-8" />
               </a>
               <a
-                href="https://linkedin.com/company/hirello"
+                target="_blank"
+                href="https://www.linkedin.com/company/hirello-ai"
                 className="text-gray-400 hover:text-blue-500 transition-colors transform hover:scale-110"
               >
                 <Linkedin className="w-8 h-8" />
               </a>
               <a
+                target="_blank"
                 href="https://tiktok.com/@hirello"
                 className="text-gray-400 hover:text-pink-500 transition-colors transform hover:scale-110"
               >
