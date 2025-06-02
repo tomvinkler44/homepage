@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
+import { trackPlanClick } from "../facebookPixel";
 
 export default function Pricing() {
   const plans = [
@@ -53,6 +54,14 @@ export default function Pricing() {
       },
     },
   ];
+
+  const handleAddClick = (plan: { name: string; price: string; period: string; features: { text: string; subtext: string; }[]; buttonText: string; buttonStyle: string; quarterlyPrice?: undefined; quarterlyDiscount?: undefined; popular?: undefined; alternateButton?: undefined; } | { name: string; price: string; period: string; quarterlyPrice: string; quarterlyDiscount: string; features: { text: string; subtext: string; }[]; buttonText: string; buttonStyle: string; popular?: undefined; alternateButton?: undefined; } | { name: string; price: string; period: string; quarterlyPrice: string; quarterlyDiscount: string; popular: boolean; features: { text: string; subtext: string; }[]; buttonText: string; buttonStyle: string; alternateButton: { text: string; style: string; }; }) => {
+    trackPlanClick(plan.name, +plan.price);
+
+    // Redirect to Vue app's pricing page with query params
+    const url = `https://dashboard.hirello.ai/pricing`;
+    window.open(url, '_blank');
+  };
 
   const coachingPlans = [
     {
@@ -156,13 +165,14 @@ export default function Pricing() {
                     : "bg-gray-100 text-gray-900 hover:bg-gray-200"
                 }`} */}
                 {plan.popular && (
-                  <Link
-                    to="https://dashboard.hirello.ai/pricing"
-                    target="_blank"
+                  <button
                     className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
+                    onClick={() => {
+                      handleAddClick(plan)
+                    }}
                   >
                     {plan.buttonText}
-                  </Link>
+                  </button>
                 )}
                 {/* {plan.alternateButton && (
                   <button className="w-full py-3 px-4 rounded-md font-semibold bg-gray-100 text-gray-900 hover:bg-gray-200">
@@ -171,13 +181,14 @@ export default function Pricing() {
                 )} */}
               </div>
               {!plan.popular && (
-                <Link
-                  to="https://dashboard.hirello.ai/pricing"
-                  target="_blank"
+                <button
                   className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
+                  onClick={() => {
+                    handleAddClick(plan)
+                  }} 
                 >
                   {plan.buttonText}
-                </Link>
+                </button>
               )}
             </div>
           ))}
@@ -216,14 +227,15 @@ export default function Pricing() {
                   ))}
                 </ul>
               </div>
-              <Link
-                to="https://dashboard.hirello.ai/pricing"
-                target="_blank"
+              <button
                 type="button"
                 className="text-center block w-full py-3 px-4 rounded-md font-semibold bg-blue-600 text-white hover:bg-blue-700"
+                onClick={() => {
+                  handleAddClick(plan)
+                }}
               >
                 {plan.buttonText}
-              </Link>
+              </button>
             </div>
           ))}
         </div>
