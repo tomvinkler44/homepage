@@ -65,7 +65,7 @@ export default function Footer() {
                   href="https://blog.hirello.ai"
                   className="hover:text-white transition-colors"
                 >
-                  Knowledge Base
+                  Resources
                 </a>
               </li>
               <li>

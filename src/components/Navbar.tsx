@@ -99,7 +99,7 @@ export default function Navbar() {
               className="text-gray-600 hover:text-gray-900 transition-colors"
               whileHover={{ scale: 1.05 }}
             >
-              Knowledge Base
+              Resources
             </motion.a>
             <motion.a
               href="https://dashboard.hirello.ai"
@@ -166,7 +166,7 @@ export default function Navbar() {
               className="block text-gray-600 hover:text-gray-900 transition-colors"
               whileHover={{ scale: 1.05 }}
             >
-              Knowledge Base
+              Resources
             </motion.a>
             <motion.a
               href="https://dashboard.hirello.ai"
